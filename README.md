@@ -22,7 +22,7 @@
 
 1. [https://desktop.github.com](https://desktop.github.com) 다운로드 및 설치
 2. GitHub 계정 로그인
-3. **File → Clone repository** → 본인 저장소 (p2026-beta) 클론
+3. **File → Clone repository** → 본인 저장소 (1taek) 클론
 4. 클론된 폴더 열기 (Windows: 파일 탐색기 / Mac: Finder)
 5. 압축 해제한 이 폴더의 **모든 내용물을 복사**해서 클론 폴더에 **붙여넣기** (덮어쓰기)
    - `index.html` 파일
@@ -36,7 +36,7 @@
 
 ### 대체 방법: GitHub 웹사이트에서 직접 업로드
 
-1. 본인 GitHub 저장소 페이지 접속 (예: github.com/leewontaek/p2026-beta)
+1. 본인 GitHub 저장소 페이지 접속 (예: github.com/leewontaek/1taek)
 2. 우상단 **Add file → Upload files** 클릭
 3. **드래그앤드롭 영역에**:
    - `index.html` 파일을 드래그
@@ -57,10 +57,10 @@
 
 | 점검 URL | 정상 결과 |
 |---------|----------|
-| https://p2026-beta.vercel.app/ | 메인 페이지가 정상 표시 |
-| https://p2026-beta.vercel.app/images/hero.jpg | 메인 포스터 이미지 단독 표시 |
-| https://p2026-beta.vercel.app/images/share.jpg | 공유용 이미지 단독 표시 |
-| https://p2026-beta.vercel.app/images/together.png | 이재명·이원택 사진 단독 표시 |
+| https://1taek.vercel.app/ | 메인 페이지가 정상 표시 |
+| https://1taek.vercel.app/images/hero.jpg | 메인 포스터 이미지 단독 표시 |
+| https://1taek.vercel.app/images/share.jpg | 공유용 이미지 단독 표시 |
+| https://1taek.vercel.app/images/together.png | 이재명·이원택 사진 단독 표시 |
 
 위 4개 URL 모두 정상이면 배포 성공입니다.
 
@@ -69,7 +69,7 @@
 배포 후, 카카오톡에 사이트 링크를 붙여넣을 때 미리보기 이미지가 보이게 하려면:
 
 1. [https://developers.kakao.com/tool/clear/og](https://developers.kakao.com/tool/clear/og) 접속
-2. URL 입력: `https://p2026-beta.vercel.app/`
+2. URL 입력: `https://1taek.vercel.app/`
 3. **캐시 초기화** 버튼 클릭
 4. 1~2분 후 카카오톡에 사이트 링크 보내보기 → 미리보기 정상 표시
 
