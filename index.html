@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>민주당 원팀 도지사 이원택 | 전북 大도약</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+
+<!-- 카카오톡·SNS 공유 미리보기용 Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="민주당 원팀 도지사 이원택">
+<meta property="og:description" content="전북 大도약 · 우리동네 공약 · 사전투표소 찾기">
+<meta property="og:url" content="https://p2026-beta.vercel.app/">
+<meta property="og:image" content="https://p2026-beta.vercel.app/images/share.jpg">
+<meta property="og:image:width" content="489">
+<meta property="og:image:height" content="615">
+<meta property="og:image:alt" content="민주당 원팀 도지사 이원택">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="민주당 원팀 도지사 이원택">
+
+<style>
+  :root {
+    --font-base: 'Pretendard Variable', 'Pretendard', 'Noto Sans KR',
+                 -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+                 'Malgun Gothic', '맑은 고딕', sans-serif;
+    --dp-blue: #152484;
+    --dp-blue-deep: #0a1554;
+    --dp-blue-soft: #e8ecfb;
+    --dp-blue-line: #c8d0ef;
+    --gold: #ffd83d;
+    --gold-deep: #f5b800;
+    --warn-red: #d92828;
+    --warn-red-soft: #ffe8e8;
+    --white: #ffffff;
+    --cream: #f6f7fb;
+    --ink: #0a0e2a;
+    --muted: #6b7591;
+    --line: #dde2ed;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  body {
+    font-family: var(--font-base);
+    background: var(--cream);
+    color: var(--ink);
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    word-break: keep-all;
+  }
+  .wrap {
+    max-width: 480px;
+    margin: 0 auto;
+    background: white;
+    min-height: 100vh;
+    box-shadow: 0 0 40px rgba(0,0,0,0.05);
+  }
+
+  /* ===== STICKY TOP NOTICE ===== */
+  .top-notice {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 18px;
+    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-deep) 100%);
+    color: var(--dp-blue-deep);
+    text-decoration: none;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+    cursor: pointer;
+    border-bottom: 2px solid var(--dp-blue-deep);
+    transition: all 0.15s;
+  }
+  .top-notice:active { transform: scale(0.99); }
+  .top-notice-icon {
+    flex-shrink: 0;
+    width: 44px; height: 44px;
+    background: var(--dp-blue-deep);
+    color: var(--gold);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+  .top-notice-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    line-height: 1.3;
+  }
+  .top-notice-title {
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+  }
+  .top-notice-sub {
+    font-size: 14px;
+    font-weight: 700;
+    opacity: 0.78;
+  }
+  .top-notice-arrow {
+    flex-shrink: 0;
+    width: 36px; height: 36px;
+    background: var(--dp-blue-deep);
+    color: var(--gold);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px;
+    font-weight: 900;
+    animation: bounceDown 1.4s ease-in-out infinite;
+  }
+  @keyframes bounceDown {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(5px); }
+    60% { transform: translateY(2px); }
+  }
+
+  /* ===== HERO (포스터 이미지) ===== */
+  .hero {
+    background: #050714;
+    overflow: hidden;
+  }
+  .hero-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 20px;
+    background: linear-gradient(135deg, var(--dp-blue) 0%, var(--dp-blue-deep) 100%);
+    color: white;
+  }
+  .party-mark {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 14px;
+    font-weight: 900;
+  }
+  .party-mark-icon {
+    width: 24px; height: 24px;
+    background: var(--gold);
+    color: var(--dp-blue-deep);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 900;
+    font-size: 12px;
+  }
+  .election-tag {
+    background: rgba(255,255,255,0.16);
+    padding: 5px 11px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    border: 1px solid rgba(255,255,255,0.22);
+  }
+  .hero-poster {
+    width: 100%;
+    background: #050714;
+    line-height: 0;
+  }
+  .hero-img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  /* ===== ONE TEAM 비교 ===== */
+  .oneteam-section {
+    padding: 40px 24px 36px;
+    background: white;
+    text-align: center;
+  }
+  .ot-stars {
+    color: var(--gold-deep);
+    letter-spacing: 0.3em;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .compare-wrap { display: grid; gap: 16px; margin-top: 24px; text-align: left; }
+
+  .team-card {
+    border-radius: 20px;
+    padding: 24px 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .team-card.blue {
+    background: linear-gradient(160deg, var(--dp-blue) 0%, var(--dp-blue-deep) 100%);
+    color: white;
+    box-shadow: 0 12px 32px rgba(21,36,132,0.28);
+  }
+  .team-card.red {
+    background: white;
+    border: 3px solid var(--warn-red);
+    color: var(--ink);
+  }
+  .team-badge {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 10px 20px;
+    border-radius: 10px;
+    letter-spacing: -0.01em;
+  }
+  .team-card.blue .team-badge { background: var(--gold); color: var(--dp-blue-deep); }
+  .team-card.red .team-badge { background: var(--warn-red); color: white; }
+  .team-headline {
+    margin-top: 14px;
+    font-size: 22px;
+    font-weight: 900;
+    letter-spacing: -0.035em;
+    line-height: 1.3;
+    white-space: nowrap;
+  }
+  .team-card.red .team-headline { color: var(--warn-red); font-size: 20px; }
+
+  .chain { margin-top: 20px; display: flex; flex-direction: column; gap: 8px; }
+  .node {
+    display: flex; align-items: center; gap: 14px;
+    padding: 14px 16px;
+    border-radius: 14px;
+  }
+  .team-card.blue .node { background: rgba(255,255,255,0.14); }
+  .team-card.red .node { background: var(--cream); }
+  .team-card.red .node.bad { background: var(--warn-red-soft); }
+  .node-icon {
+    flex-shrink: 0;
+    width: 44px; height: 44px;
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px;
+    font-weight: 900;
+  }
+  .team-card.blue .node-icon { background: var(--gold); color: var(--dp-blue-deep); }
+  .team-card.red .node-icon { background: var(--dp-blue); color: white; }
+  .team-card.red .node.bad .node-icon { background: var(--warn-red); color: white; }
+  .node-body { flex: 1; min-width: 0; }
+  .node-role { font-size: 13px; opacity: 0.85; font-weight: 600; }
+  .node-line {
+    margin-top: 3px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .node-name {
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+  }
+  .node-party {
+    font-size: 12px;
+    font-weight: 800;
+    padding: 3px 9px;
+    border-radius: 5px;
+    display: inline-block;
+    white-space: nowrap;
+  }
+  .node-party.dp { background: var(--gold); color: var(--dp-blue-deep); }
+  .node-party.ind { background: var(--warn-red); color: white; }
+
+  .connector {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 900;
+    padding: 4px 0;
+  }
+  .connector.good { color: var(--gold); }
+  .connector.bad { color: var(--warn-red); }
+
+  /* 원팀 증명 사진 */
+  .team-photo {
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.28);
+    background: white;
+  }
+  .team-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .team-result {
+    margin-top: 20px;
+    padding: 22px 18px;
+    border-radius: 14px;
+    font-size: 22px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 1.35;
+    letter-spacing: -0.02em;
+  }
+  .team-card.blue .team-result { background: var(--gold); color: var(--dp-blue-deep); }
+  .team-card.red .team-result {
+    background: var(--warn-red-soft);
+    color: #8a1212;
+    border: 1px dashed var(--warn-red);
+    font-size: 19px;
+  }
+
+  /* ===== KEY MESSAGES ===== */
+  .message-section {
+    padding: 40px 24px 36px;
+    background: var(--dp-blue);
+    color: white;
+    position: relative;
+    overflow: hidden;
+  }
+  .message-section::before {
+    content: '';
+    position: absolute;
+    top: -80px; right: -80px;
+    width: 220px; height: 220px;
+    background: radial-gradient(circle, var(--gold) 0%, transparent 65%);
+    opacity: 0.1;
+  }
+  .message-section .section-title { color: white; }
+  .message-section .section-title .accent { color: var(--gold); }
+  .message-section .section-tag { background: var(--gold); color: var(--dp-blue-deep); }
+
+  .banner-img {
+    width: 100%;
+    border-radius: 14px;
+    margin: 20px 0 14px;
+    display: block;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    position: relative; z-index: 1;
+  }
+
+  .promise-card {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 18px;
+    padding: 24px 20px;
+    margin-bottom: 14px;
+    position: relative; z-index: 1;
+  }
+  .promise-num {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--gold);
+    color: var(--dp-blue-deep);
+    padding: 6px 14px 6px 6px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 900;
+  }
+  .promise-num-circle {
+    width: 26px; height: 26px;
+    background: var(--dp-blue-deep);
+    color: var(--gold);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 15px;
+    font-weight: 900;
+  }
+  .promise-title {
+    margin-top: 14px;
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: -0.03em;
+    line-height: 1.25;
+  }
+  .promise-title .accent { color: var(--gold); }
+  .promise-desc {
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 1.7;
+    opacity: 0.92;
+    font-weight: 500;
+  }
+  .promise-tags {
+    margin-top: 14px;
+    display: flex; flex-wrap: wrap; gap: 8px;
+  }
+  .promise-tag {
+    font-size: 14px;
+    font-weight: 700;
+    background: rgba(255,216,61,0.18);
+    color: var(--gold);
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,216,61,0.35);
+  }
+
+  /* ===== PICKER (시·군 / 세대) ===== */
+  .picker-section {
+    padding: 40px 24px 36px;
+    background: white;
+    text-align: center;
+  }
+  .picker-section.alt {
+    background: var(--dp-blue-soft);
+    border-top: 1px solid var(--line);
+  }
+
+  .region-grid, .age-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 24px;
+    text-align: center;
+  }
+  .region-btn {
+    padding: 22px 8px;
+    background: white;
+    border: 2px solid var(--dp-blue-line);
+    border-radius: 14px;
+    font-family: var(--font-base);
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--ink);
+    cursor: pointer;
+    transition: all 0.15s;
+    min-height: 70px;
+  }
+  .region-btn:active { transform: scale(0.96); }
+  .region-btn.active {
+    background: var(--dp-blue);
+    color: white;
+    border-color: var(--dp-blue);
+    box-shadow: 0 6px 18px rgba(21,36,132,0.35);
+  }
+
+  .age-btn {
+    padding: 18px 8px;
+    background: white;
+    border: 2px solid var(--dp-blue-line);
+    border-radius: 14px;
+    font-family: var(--font-base);
+    cursor: pointer;
+    transition: all 0.15s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    min-height: 110px;
+  }
+  .age-btn:active { transform: scale(0.96); }
+  .age-btn.active {
+    background: var(--dp-blue);
+    border-color: var(--dp-blue);
+    box-shadow: 0 6px 18px rgba(21,36,132,0.35);
+  }
+  .age-btn-icon {
+    font-size: 32px;
+    line-height: 1;
+  }
+  .age-btn-label {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--ink);
+  }
+  .age-btn.active .age-btn-label { color: white; }
+  .age-btn-sub {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--muted);
+  }
+  .age-btn.active .age-btn-sub { color: var(--gold); }
+
+  /* 공약 결과 박스 */
+  .pledge-box {
+    background: white;
+    border-radius: 18px;
+    padding: 24px 20px;
+    border: 3px solid var(--dp-blue);
+    margin-top: 20px;
+    text-align: left;
+    animation: slideIn 0.35s ease-out;
+    box-shadow: 0 8px 24px rgba(21,36,132,0.12);
+  }
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .pledge-header {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid var(--dp-blue-soft);
+  }
+  .pledge-region {
+    font-size: 26px;
+    font-weight: 900;
+    color: var(--dp-blue);
+    letter-spacing: -0.025em;
+  }
+  .pledge-count {
+    font-size: 13px;
+    background: var(--gold);
+    color: var(--dp-blue-deep);
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-weight: 900;
+  }
+  .pledge-onTeam {
+    background: var(--dp-blue-soft);
+    color: var(--dp-blue);
+    font-size: 15px;
+    font-weight: 800;
+    padding: 14px 16px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    text-align: center;
+    line-height: 1.5;
+  }
+  .pledge-list { list-style: none; display: grid; gap: 10px; }
+  .pledge-item {
+    display: flex; gap: 14px; align-items: flex-start;
+    padding: 16px 14px;
+    background: var(--cream);
+    border-radius: 12px;
+    font-size: 17px;
+    line-height: 1.55;
+    font-weight: 500;
+  }
+  .pledge-check {
+    flex-shrink: 0;
+    width: 28px; height: 28px;
+    background: var(--dp-blue);
+    color: white;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px;
+    font-weight: 900;
+    margin-top: 1px;
+  }
+  .pledge-empty {
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--muted);
+    font-size: 15px;
+    background: var(--cream);
+    border-radius: 14px;
+    border: 2px dashed var(--dp-blue-line);
+    font-weight: 600;
+    margin-top: 20px;
+  }
+
+  /* ===== VOTE INFO ===== */
+  .vote-section {
+    padding: 40px 24px 36px;
+    background: var(--dp-blue-soft);
+  }
+  .vote-grid { display: grid; gap: 12px; margin-top: 24px; }
+  .vote-card {
+    display: flex; gap: 16px; align-items: center;
+    padding: 20px 18px;
+    background: white;
+    border-radius: 16px;
+    border: 1px solid var(--dp-blue-line);
+  }
+  .vote-card.primary {
+    background: linear-gradient(135deg, var(--dp-blue), var(--dp-blue-deep));
+    color: white;
+    border: none;
+    box-shadow: 0 8px 22px rgba(21,36,132,0.28);
+  }
+  .vote-icon {
+    flex-shrink: 0;
+    width: 52px; height: 52px;
+    background: var(--dp-blue);
+    color: white;
+    border-radius: 14px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 24px;
+  }
+  .vote-card.primary .vote-icon { background: var(--gold); color: var(--dp-blue-deep); }
+  .vote-label { font-size: 14px; opacity: 0.8; font-weight: 700; }
+  .vote-card.primary .vote-label { color: var(--gold); opacity: 1; }
+  .vote-value { font-size: 19px; font-weight: 900; margin-top: 4px; }
+  .vote-extra { font-size: 14px; opacity: 0.75; margin-top: 4px; font-weight: 500; }
+
+  /* ===== ADDRESS SEARCH ===== */
+  .addr-search-card {
+    margin-top: 24px;
+    background: white;
+    border: 3px solid var(--dp-blue);
+    border-radius: 18px;
+    padding: 22px 16px 20px;
+    box-shadow: 0 10px 28px rgba(21,36,132,0.2);
+    scroll-margin-top: 100px;
+  }
+  .addr-title {
+    font-size: 21px;
+    font-weight: 900;
+    color: var(--ink);
+    letter-spacing: -0.03em;
+    line-height: 1.3;
+    white-space: nowrap;
+  }
+  .addr-title .blue { color: var(--dp-blue); }
+  .addr-desc {
+    margin-top: 8px;
+    font-size: 15px;
+    color: var(--muted);
+    font-weight: 500;
+    line-height: 1.6;
+  }
+  .addr-input-row {
+    margin-top: 18px;
+    display: flex;
+    gap: 8px;
+    width: 100%;
+  }
+  .addr-input {
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 18px 14px;
+    border: 2px solid var(--dp-blue-line);
+    border-radius: 12px;
+    font-family: var(--font-base);
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--ink);
+    background: white;
+    outline: none;
+    transition: border-color 0.15s;
+    -webkit-appearance: none;
+    min-height: 56px;
+    width: 100%;
+  }
+  .addr-input:focus { border-color: var(--dp-blue); }
+  .addr-input::placeholder { color: #b3bccc; font-size: 15px; }
+  .addr-submit {
+    flex-shrink: 0;
+    padding: 18px 18px;
+    background: var(--dp-blue);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-family: var(--font-base);
+    font-size: 16px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: all 0.15s;
+    white-space: nowrap;
+    min-width: 72px;
+  }
+  .addr-submit:active { transform: scale(0.97); background: var(--dp-blue-deep); }
+
+  .addr-hint {
+    margin-top: 12px;
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.6;
+    font-weight: 500;
+  }
+  .addr-hint b { color: var(--dp-blue); font-weight: 800; }
+
+  .search-results {
+    margin-top: 16px;
+    display: grid;
+    gap: 12px;
+  }
+  .result-empty {
+    padding: 18px;
+    background: var(--warn-red-soft);
+    color: #8a1212;
+    border-radius: 12px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 600;
+    border: 1px dashed var(--warn-red);
+    line-height: 1.6;
+  }
+  .station-card {
+    background: white;
+    border: 2px solid var(--dp-blue-line);
+    border-radius: 14px;
+    padding: 18px 18px;
+    animation: slideIn 0.3s ease-out;
+  }
+  .station-card.top {
+    border: 3px solid var(--dp-blue);
+    background: linear-gradient(180deg, white 0%, var(--dp-blue-soft) 100%);
+    box-shadow: 0 8px 22px rgba(21,36,132,0.18);
+  }
+  .station-top-badge {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--dp-blue-deep);
+    font-size: 13px;
+    font-weight: 900;
+    padding: 5px 12px;
+    border-radius: 999px;
+    margin-bottom: 10px;
+  }
+  .station-name {
+    font-size: 21px;
+    font-weight: 900;
+    color: var(--dp-blue);
+    letter-spacing: -0.02em;
+  }
+  .station-region {
+    font-size: 14px;
+    color: var(--muted);
+    font-weight: 600;
+    margin-top: 4px;
+  }
+  .station-building {
+    margin-top: 14px;
+    font-size: 17px;
+    color: var(--ink);
+    font-weight: 700;
+    line-height: 1.5;
+  }
+  .station-floor {
+    display: inline-block;
+    background: var(--dp-blue);
+    color: white;
+    font-size: 13px;
+    font-weight: 800;
+    padding: 3px 9px;
+    border-radius: 5px;
+    margin-left: 8px;
+    vertical-align: middle;
+  }
+  .station-addr {
+    margin-top: 8px;
+    font-size: 15px;
+    color: var(--muted);
+    font-weight: 500;
+    line-height: 1.6;
+  }
+  .station-actions {
+    margin-top: 16px;
+    display: flex;
+    gap: 8px;
+  }
+  .station-action {
+    flex: 1;
+    padding: 14px 10px;
+    background: white;
+    color: var(--dp-blue);
+    border: 2px solid var(--dp-blue);
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 800;
+    transition: all 0.15s;
+  }
+  .station-action:active { transform: scale(0.97); background: var(--dp-blue-soft); }
+  .station-action.primary {
+    background: var(--dp-blue);
+    color: white;
+  }
+  .station-action.primary:active { background: var(--dp-blue-deep); }
+
+  .find-poll {
+    margin-top: 16px;
+    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-deep) 100%);
+    border-radius: 16px;
+    padding: 22px 20px;
+    display: flex; align-items: center; justify-content: space-between;
+    text-decoration: none;
+    color: var(--dp-blue-deep);
+    box-shadow: 0 8px 22px rgba(245,184,0,0.4);
+  }
+  .find-poll-title { font-size: 19px; font-weight: 900; }
+  .find-poll-desc { font-size: 14px; margin-top: 4px; opacity: 0.78; font-weight: 600; }
+  .find-poll-arrow {
+    width: 42px; height: 42px;
+    background: var(--dp-blue-deep);
+    color: var(--gold);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px;
+    font-weight: 900;
+    flex-shrink: 0;
+    margin-left: 14px;
+  }
+
+  /* ===== BIO ===== */
+  .bio-section {
+    padding: 40px 24px 36px;
+    background: white;
+  }
+  .bio-card {
+    background: linear-gradient(180deg, var(--cream) 0%, white 100%);
+    border-radius: 18px;
+    padding: 24px 20px;
+    border: 2px solid var(--dp-blue-line);
+  }
+  .bio-header {
+    display: flex; align-items: center; gap: 14px;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid var(--dp-blue-line);
+  }
+  .bio-num {
+    width: 60px; height: 60px;
+    background: linear-gradient(135deg, var(--gold), var(--gold-deep));
+    color: var(--dp-blue-deep);
+    border-radius: 14px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 1;
+    box-shadow: 0 6px 16px rgba(245,184,0,0.3);
+  }
+  .bio-text { flex: 1; }
+  .bio-party { font-size: 13px; color: var(--dp-blue); font-weight: 900; }
+  .bio-name { font-size: 26px; font-weight: 900; margin-top: 2px; letter-spacing: -0.03em; }
+  .bio-role { font-size: 14px; color: var(--muted); margin-top: 4px; font-weight: 500; }
+  .bio-list { list-style: none; }
+  .bio-list li {
+    font-size: 16px; color: var(--ink);
+    padding: 10px 0;
+    border-bottom: 1px dashed var(--dp-blue-line);
+    line-height: 1.55;
+    font-weight: 500;
+  }
+  .bio-list li:last-child { border-bottom: none; }
+  .bio-list li::before {
+    content: '·';
+    color: var(--dp-blue);
+    margin-right: 10px;
+    font-weight: 900;
+  }
+
+  /* ===== SHARE ===== */
+  .share-section { padding: 24px; background: white; border-top: 1px solid var(--line); }
+  .share-btn {
+    padding: 20px;
+    border-radius: 14px;
+    border: 2px solid var(--dp-blue);
+    background: white;
+    color: var(--dp-blue);
+    font-weight: 900;
+    font-size: 17px;
+    cursor: pointer;
+    font-family: var(--font-base);
+    transition: all 0.15s;
+  }
+  .share-btn:active { transform: scale(0.98); background: var(--dp-blue-soft); }
+  .share-btn.primary { background: var(--dp-blue); color: white; }
+  .share-btn.primary:active { background: var(--dp-blue-deep); }
+  .share-btn-full { width: 100%; }
+
+  /* ===== FOOTER ===== */
+  footer {
+    background: var(--ink);
+    color: rgba(255,255,255,0.7);
+    padding: 28px 24px 40px;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  footer strong { color: white; font-weight: 900; font-size: 16px; }
+  .footer-info { margin-top: 14px; }
+  .footer-info b { color: rgba(255,255,255,0.95); font-weight: 700; }
+  .footer-disclosure {
+    margin-top: 18px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(255,255,255,0.13);
+    font-size: 13px;
+    color: rgba(255,255,255,0.55);
+    line-height: 1.65;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ===== STICKY 상단 안내 ===== -->
+  <a href="#findVoting" class="top-notice">
+    <div class="top-notice-icon">🔍</div>
+    <div class="top-notice-text">
+      <div class="top-notice-title">나랑 가까운 사전투표소 찾기</div>
+      <div class="top-notice-sub">아래로 내려보세요</div>
+    </div>
+    <div class="top-notice-arrow">↓</div>
+  </a>
+
+  <!-- ===== HERO (메인 포스터) ===== -->
+  <section class="hero">
+    <div class="hero-topbar">
+      <div class="party-mark">
+        <span class="party-mark-icon">★</span>
+        <span>더불어민주당 원팀</span>
+      </div>
+      <div class="election-tag">제9회 지방선거</div>
+    </div>
+    <div class="hero-poster">
+      <img src="/images/hero.jpg" alt="기회를 주십시오 - 민주당 원팀 도지사 이원택" class="hero-img">
+    </div>
+  </section>
+
+  <!-- ===== ONE TEAM 비교 ===== -->
+  <section class="oneteam-section">
+    <div class="ot-stars">★ ★ ★</div>
+    <span class="section-tag">이번 선거의 핵심</span>
+    <h2 class="section-title">
+      전북이 강해지려면<br><span class="blue">'민주당 원팀'</span>이어야 합니다
+    </h2>
+    <p class="section-desc">대통령·도지사·시장군수가 한 팀일 때<br>예산이 모이고, 정책이 빨라집니다</p>
+
+    <div class="compare-wrap">
+      <!-- ✅ 민주당 원팀 -->
+      <div class="team-card blue">
+        <span class="team-badge">✓ 민주당 원팀</span>
+        <div class="team-headline">예산·정책 직통 연결</div>
+        <div class="chain">
+          <div class="node">
+            <div class="node-icon">대통령</div>
+            <div class="node-body">
+              <div class="node-role">대한민국 대통령</div>
+              <div class="node-line">
+                <span class="node-name">이재명</span>
+                <span class="node-party dp">더불어민주당</span>
+              </div>
+            </div>
+          </div>
+          <div class="connector good">↓ 연결</div>
+          <div class="node">
+            <div class="node-icon">도지사</div>
+            <div class="node-body">
+              <div class="node-role">전북도지사 · 기호 1번</div>
+              <div class="node-line">
+                <span class="node-name">이원택</span>
+                <span class="node-party dp">더불어민주당</span>
+              </div>
+            </div>
+          </div>
+          <div class="connector good">↓ 연결</div>
+          <div class="node">
+            <div class="node-icon">시군</div>
+            <div class="node-body">
+              <div class="node-role">전북 14개 시장·군수</div>
+              <div class="node-line">
+                <span class="node-name">민주당 후보들</span>
+                <span class="node-party dp">더불어민주당</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="team-photo">
+          <img src="/images/together.png" alt="이재명 대통령과 이원택 후보, 가장 개혁적인 도지사">
+        </div>
+        <div class="team-result">중앙정부 예산을 가져오는<br>가장 빠른 길</div>
+      </div>
+
+      <!-- ❌ 무소속이면 -->
+      <div class="team-card red">
+        <span class="team-badge">✗ 무소속 도지사면?</span>
+        <div class="team-headline">중앙과 단절, 전북만 뒤처집니다</div>
+        <div class="chain">
+          <div class="node">
+            <div class="node-icon">대통령</div>
+            <div class="node-body">
+              <div class="node-role">대한민국 대통령</div>
+              <div class="node-line">
+                <span class="node-name">이재명</span>
+                <span class="node-party dp">더불어민주당</span>
+              </div>
+            </div>
+          </div>
+          <div class="connector bad">✗ 단절</div>
+          <div class="node bad">
+            <div class="node-icon">도지사</div>
+            <div class="node-body">
+              <div class="node-role">전북도지사</div>
+              <div class="node-line">
+                <span class="node-name">무소속 후보</span>
+                <span class="node-party ind">무소속</span>
+              </div>
+            </div>
+          </div>
+          <div class="connector bad">✗ 단절</div>
+          <div class="node">
+            <div class="node-icon">시군</div>
+            <div class="node-body">
+              <div class="node-role">전북 14개 시장·군수</div>
+              <div class="node-line">
+                <span class="node-name">민주당 후보들</span>
+                <span class="node-party dp">더불어민주당</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="team-result">도지사 혼자 끊어진 고리,<br>예산도 정책도 더디게 옵니다</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== KEY MESSAGES (3대 약속) ===== -->
+  <section class="message-section">
+    <span class="section-tag">3대 핵심 약속</span>
+    <h2 class="section-title">민주당 원팀이<br><span class="accent">전북을 大도약</span>시킵니다</h2>
+
+
+    <div class="promise-card">
+      <div class="promise-num">
+        <span class="promise-num-circle">1</span>
+        <span>원팀의 힘</span>
+      </div>
+      <div class="promise-title">대통령실·중앙정부·민주당과<br><span class="accent">바로 연결되는 도지사</span></div>
+      <div class="promise-desc">청와대·정무부지사·재선 국회의원 출신.<br>중앙정부 예산을 직접 가져오는 베테랑.</div>
+      <div class="promise-tags">
+        <span class="promise-tag">#대통령실</span>
+        <span class="promise-tag">#중앙정부</span>
+        <span class="promise-tag">#예산확보</span>
+      </div>
+    </div>
+
+
+    <div class="promise-card">
+      <div class="promise-num">
+        <span class="promise-num-circle">2</span>
+        <span>100년 먹거리</span>
+      </div>
+      <div class="promise-title"><span class="accent">AI 반도체 200조</span> 유치<br>전북 100년 먹거리 완성</div>
+      <div class="promise-desc">삼성·하이닉스 첨단산업 유치.<br>민주당 정부와 한 팀이어야 가능합니다.</div>
+      <div class="promise-tags">
+        <span class="promise-tag">#AI반도체</span>
+        <span class="promise-tag">#200조</span>
+        <span class="promise-tag">#첨단산업</span>
+      </div>
+    </div>
+
+    <div class="promise-card">
+      <div class="promise-num">
+        <span class="promise-num-circle">3</span>
+        <span>농민이 웃는 전북</span>
+      </div>
+      <div class="promise-title">전북 농민에게<br><span class="accent">매달 농민수당</span></div>
+      <div class="promise-desc">농민수당 시·군 확대 + 가격보장 + 햇빛·바람 연금.<br>전 농어민위원장이 직접 챙깁니다.</div>
+      <div class="promise-tags">
+        <span class="promise-tag">#농민수당</span>
+        <span class="promise-tag">#가격보장</span>
+        <span class="promise-tag">#햇빛바람연금</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 시·군별 공약 ===== -->
+  <section class="picker-section">
+    <span class="section-tag">내 동네 공약</span>
+    <h2 class="section-title">우리동네에<br><span class="blue">이원택이 약속한 것</span></h2>
+    <p class="section-desc">우리 시·군을 눌러주세요</p>
+
+    <div class="region-grid" id="regionGrid"></div>
+    <div id="pledgeArea">
+      <div class="pledge-empty">↑ 위에서 우리 시·군을 눌러주세요</div>
+    </div>
+  </section>
+
+  <!-- ===== 세대별 공약 ===== -->
+  <section class="picker-section alt">
+    <span class="section-tag gold">나에게 맞는 약속</span>
+    <h2 class="section-title">청년·어르신·농민,<br><span class="blue">각자의 맞춤 공약</span></h2>
+    <p class="section-desc">해당하는 분야를 눌러주세요</p>
+
+    <div class="age-grid" id="ageGrid"></div>
+    <div id="agePledgeArea">
+      <div class="pledge-empty">↑ 위에서 해당 분야를 눌러주세요</div>
+    </div>
+  </section>
+
+  <!-- ===== 사전투표 안내 ===== -->
+  <section class="vote-section">
+    <span class="section-tag">투표 안내</span>
+    <h2 class="section-title">5월 29일·30일<br><span class="blue">사전투표</span>하세요</h2>
+
+    <div class="vote-grid">
+      <div class="vote-card primary">
+        <div class="vote-icon">📅</div>
+        <div>
+          <div class="vote-label">사전투표</div>
+          <div class="vote-value">5월 29일(금) ~ 30일(토)</div>
+          <div class="vote-extra">매일 06:00 ~ 18:00 · 전국 어디서나</div>
+        </div>
+      </div>
+      <div class="vote-card">
+        <div class="vote-icon">🗳</div>
+        <div>
+          <div class="vote-label">본투표일</div>
+          <div class="vote-value">6월 3일(수) 06:00 ~ 18:00</div>
+          <div class="vote-extra">지정된 투표소에서만 가능</div>
+        </div>
+      </div>
+      <div class="vote-card">
+        <div class="vote-icon">🆔</div>
+        <div>
+          <div class="vote-label">준비물</div>
+          <div class="vote-value">사진이 있는 신분증</div>
+          <div class="vote-extra">주민등록증 · 운전면허증 · 여권 등</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 우리집 주소로 검색 -->
+    <div class="addr-search-card" id="findVoting">
+      <div class="addr-title">🏠 <span class="blue">우리주소 투표소 찾기</span></div>
+      <div class="addr-desc">동·읍·면 이름만 적으셔도 됩니다</div>
+      <div class="addr-input-row">
+        <input type="text" class="addr-input" id="addrInput" placeholder="예) 전주 효자동" autocomplete="off" inputmode="text">
+        <button class="addr-submit" onclick="searchByAddress()">찾기</button>
+      </div>
+      <div class="addr-hint">💡 전북 <b>243개 사전투표소</b> 정보가 들어있습니다</div>
+      <div class="search-results" id="searchResults"></div>
+    </div>
+
+    <!-- 선관위 공식 사이트 -->
+    <a href="https://si.nec.go.kr/" target="_blank" rel="noopener" class="find-poll">
+      <div style="flex:1;">
+        <div class="find-poll-title">선관위에서도 확인 가능</div>
+        <div class="find-poll-desc">si.nec.go.kr · 중앙선거관리위원회 공식</div>
+      </div>
+      <div class="find-poll-arrow">→</div>
+    </a>
+  </section>
+
+  <!-- ===== 후보 약력 ===== -->
+  <section class="bio-section">
+    <div class="bio-card">
+      <div class="bio-header">
+        <div class="bio-num">1</div>
+        <div class="bio-text">
+          <div class="bio-party">더불어민주당</div>
+          <div class="bio-name">이원택</div>
+          <div class="bio-role">전북도지사 후보 · 1970년생 · 김제 출생</div>
+        </div>
+      </div>
+      <ul class="bio-list">
+        <li>전)제21대·22대 국회의원 (군산·김제·부안을)</li>
+        <li>전)전라북도 정무부지사</li>
+        <li>전)대통령비서실 행정관</li>
+        <li>전)더불어민주당 전북특별자치도당 위원장</li>
+        <li>전)더불어민주당 전국농어민위원장</li>
+        <li>전)제22대 농림축산식품해양수산위원회 간사</li>
+        <li>전)제20대 대선 캠프 종합상황실 수석부실장</li>
+        <li>전북대학교 화학공학과 졸업</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== 공유 ===== -->
+  <section class="share-section">
+    <button class="share-btn primary share-btn-full" onclick="copyLink()">🔗 링크 복사하기</button>
+  </section>
+
+  <!-- ===== 푸터 ===== -->
+  <footer>
+    <strong>택이 택이 원택이</strong>
+    <div class="footer-info">
+      <b>선거사무소</b> 전북특별자치도 전주시 완산구 백제대로 336<br>
+      <b>전화</b> 063-224-0036 · <b>팩스</b> 063-254-8258
+    </div>
+    <div class="footer-disclosure">
+      본 페이지는 이원택 후보 선거사무소에서 제작한 홍보물입니다.<br>
+      지역별 공약은 「제9회 전국동시지방선거 책자형선거공보」(2026.05.06)에서 발췌하였으며,<br>
+      사전투표소 정보는 중앙선거관리위원회 공식자료를 기반으로 합니다.
+    </div>
+  </footer>
+
+</div>
+
+<script>
+  // ===== 사이트 정보 =====
+  const SITE_URL = 'https://p2026-beta.vercel.app/';
+
+  // ===== 지역별 공약 =====
+  const regionData = {
+    '전주시': ['전북AI 신뢰성 혁신 허브센터 구축','K-Culture 플랫폼, 문화 산업 도시 전주','탄소복합재 기반 방위산업 생태계 조성','제3금융 중심지, 글로벌 자산운용 도시 전주'],
+    '군산시': ['새만금 RE100 선도 산업단지 조성','「피지컬 AI 로봇 메가특구」지정 추진','새만금국제공항 적기 개항 및 활주로 확장','군산조선소 부활로 일자리 확대'],
+    '익산시': ['KTX 익산역 복합개발 및 광역허브 프로젝트','푸드테크·K푸드·대체식품 혁신클러스터 고도화','K-그린바이오 혁신허브 구축','반도체 첨단케미컬 특화 클러스터 조성'],
+    '정읍시': ['전북 바이오헬스 첨단산업 클러스터 구축','동진강 회복 프로젝트','동학농민혁명 세계 기록유산 기록관 건립 추진','전북 내장호 사계절 머물쉼터'],
+    '남원시': ['국립의학전문대학원 설립','차세대 식물엑소좀 기술개발 및 실증 연계 핵심 거점 구축','지리산-의료 기반 치유·정주 라이프타운 조성','국립 판소리 산업 복합 단지 조성'],
+    '김제시': ['지능형 AI 농업로봇 국가첨단과학기술단지 조성','국립해양도시과학관 건립','종자생명산업 혁신클러스터 조성','새만금 국가정원 조성사업'],
+    '완주군': ['피지컬AI 클러스터 조성','완주 수소상용 모빌리티 특화단지 조성','전북방산혁신클러스터 조성','호남권 중추 물류허브도시 조성'],
+    '진안군': ['용담호 에코토피아-진안형 RE100 관광 모델 구축','진안 양수발전소 유치','완주 소양-진안 부귀(국도 26호선) 선형개량','지덕권 산림약용식물 특화산업화 단지 조성'],
+    '무주군': ['무주 항공·우주산업 투자선도지구 지정 추진','태권도원 활성화를 통한 태권도 종주국 위상 강화','무주 반딧불 스포츠타운 조성 사업','무주군 고령층 친화 공공임대주택 조성 사업'],
+    '장수군': ['호남권 소방안전 허브 조성','장수군 양수발전소 건립','레드푸드 미래성장 기반 조성 사업','장수군 면단위 LPG배관망 구축'],
+    '임실군': ['임실역사 신축 및 KTX 정차 추진','전국 이·통장 연수원 건립 추진','반려동물 매개 치유센터 조성','임실군 가축분뇨공공처리시설 개선사업','「자원순환형 스마트팜 클러스터」조성'],
+    '순창군': ['순창 강천산 K-웰니스 힐링 관광지 조성','발효·장류기반 「미식관광 일번지 순창」 프로젝트','순창 미생물 농생명산업지구 조성사업','교통약자 이동권 보장을 위한 맞춤형 지원'],
+    '고창군': ['서해안권 철도 완결 사업','RE100 국가산업단지 기반 조성','고창~담양간 고속도로 연장 추진','고창전력시험센터 「에너지 오픈 플랫폼」 전환'],
+    '부안군': ['서남권 해상풍력 연계 새만금 RE100 국가산단 기반 조성','수소도시 완성 (MW급 수전해 생산기지 구축)','줄포만 일원 국가해양치유지구 지정','변산반도 관광인프라 구축']
+  };
+
+  const regionOrder = ['전주시','군산시','익산시','정읍시','남원시','김제시','완주군','진안군','무주군','장수군','임실군','순창군','고창군','부안군'];
+
+  document.getElementById('regionGrid').innerHTML = regionOrder.map(r =>
+    `<button class="region-btn" onclick="selectRegion('${r}', this)">${r}</button>`
+  ).join('');
+
+  function selectRegion(region, btnEl) {
+    document.querySelectorAll('.region-btn').forEach(b => b.classList.remove('active'));
+    btnEl.classList.add('active');
+    const pledges = regionData[region];
+    const area = document.getElementById('pledgeArea');
+    area.innerHTML = `
+      <div class="pledge-box">
+        <div class="pledge-header">
+          <div class="pledge-region">📍 ${region}</div>
+          <div class="pledge-count">${pledges.length}대 공약</div>
+        </div>
+        <div class="pledge-onTeam">민주당 ${region}장과 한 팀이 되어<br>더 빠르게 추진합니다</div>
+        <ul class="pledge-list">
+          ${pledges.map((p, i) => `
+            <li class="pledge-item">
+              <span class="pledge-check">${i+1}</span>
+              <span>${p}</span>
+            </li>
+          `).join('')}
+        </ul>
+      </div>
+    `;
+    setTimeout(() => area.scrollIntoView({behavior:'smooth', block:'nearest'}), 100);
+  }
+
+  // ===== 세대별 공약 =====
+  const ageData = {
+    '청년': {icon:'🎓', sub:'20~30대', title:'청년에게 더 많은 기회를 약속합니다', pledges:['1천원 청년주택 공급','1천만원 예식비용 지원','중소기업 청년 복지카드 도입','생성형 AI 구독료 지원 점진적 확대','기업연계 서포터즈 활동 지원 및 공모대회 개최','진짜 전북 청년 스타트업 지원']},
+    '여성·가족': {icon:'🏡', sub:'돌봄·육아', title:'여성도 가족도 안심하는 전북', pledges:['전북형 전세대 포괄 SOS 돌봄센터 구축','전북 핵심 복지거점 리뉴얼','산후조리비 지원','여성 1인 가구 안심세트 지원','사회복지종사자 「전북형 표준임금체계」 도입']},
+    '어르신': {icon:'👵', sub:'경로·복지', title:'어르신의 편안한 일상을 약속합니다', pledges:['도농복합형 실버타운 조성','경로당 무상급식 확대 및 반찬 제공','임플란트 및 틀니 치료 지원 확대','경로당 회장·총무 활동비 지급']},
+    '농어민': {icon:'🌾', sub:'농민수당·소득', title:'농어민이 웃는 전북을 약속합니다', pledges:['농어촌기본소득(농민수당) 시·군 확대','농산물 가격보장 정책 확대 · 농업소득 안정화','후계농 및 청년농 체계적 육성 및 지원','햇빛·바람 연금 지급 (재생에너지 연계)','기후위기 대응형 스마트 농수산업 및 산림·임업 육성','전북 로컬푸드를 농림수축산까지 확장']},
+    '장애인·보훈': {icon:'🎖', sub:'복지·예우', title:'장애인의 행복, 보훈의 향상을 약속합니다', pledges:['근로장애인 임금 현실화','유니버설 디자인 마을 리모델링','장애인 안심주택 리모델링 지원','참전·보훈 수당 도비 지원 대폭 인상','임실호국원 일대 「보훈 힐링 공원」 조성 및 시설 개선']},
+    '문화·평생': {icon:'🎭', sub:'모든 세대', title:'삶과 함께하는 문화를 만들겠습니다', pledges:['전북 평생문화동행 사업','동네 민간 문화공간을 생활거점으로','찾아가는 문화예술 활성화','문화누리카드 확대 지원']}
+  };
+  const ageOrder = ['청년','여성·가족','어르신','농어민','장애인·보훈','문화·평생'];
+
+  document.getElementById('ageGrid').innerHTML = ageOrder.map(k => {
+    const d = ageData[k];
+    return `<button class="age-btn" onclick="selectAge('${k}', this)">
+      <span class="age-btn-icon">${d.icon}</span>
+      <span class="age-btn-label">${k}</span>
+      <span class="age-btn-sub">${d.sub}</span>
+    </button>`;
+  }).join('');
+
+  function selectAge(key, btnEl) {
+    document.querySelectorAll('.age-btn').forEach(b => b.classList.remove('active'));
+    btnEl.classList.add('active');
+    const d = ageData[key];
+    const area = document.getElementById('agePledgeArea');
+    area.innerHTML = `
+      <div class="pledge-box">
+        <div class="pledge-header">
+          <div class="pledge-region">${d.icon} ${key}</div>
+          <div class="pledge-count">${d.pledges.length}개 약속</div>
+        </div>
+        <div class="pledge-onTeam">${d.title}</div>
+        <ul class="pledge-list">
+          ${d.pledges.map((p, i) => `
+            <li class="pledge-item">
+              <span class="pledge-check">${i+1}</span>
+              <span>${p}</span>
+            </li>
+          `).join('')}
+        </ul>
+      </div>
+    `;
+    setTimeout(() => area.scrollIntoView({behavior:'smooth', block:'nearest'}), 100);
+  }
+
+  // ===== 전북 243개 사전투표소 (선관위 공식) =====
+  const stations = [{"r":"전주시","g":"전주시덕진구","d":"금암동","b":"금암동현장민원실(2층, 다목적실)","a":"전북특별자치도 전주시 덕진구 거북바우로 50 (금암동)","f":"2층"},{"r":"전주시","g":"전주시덕진구","d":"덕진동","b":"전주실내체육관(1층, 체육관)","a":"전북특별자치도 전주시 덕진구 권삼득로 308 (덕진동1가)","f":"1층"},{"r":"전주시","g":"전주시덕진구","d":"송천1동","b":"어울림국민체육센터 (2층,다목적체육관)","a":"전북특별자치도 전주시 덕진구 보훈누리로 61 (송천동1가)","f":"2층"},{"r":"전주시","g":"전주시덕진구","d":"송천2동","b":"송천2동주민센터(3층, 대회의실)","a":"전북특별자치도 전주시 덕진구 두간9길 6 (송천동1가)","f":"3층"},{"r":"전주시","g":"전주시덕진구","d":"송천3동","b":"송천3동주민센터(1층, 다목적회의실)","a":"전북특별자치도 전주시 덕진구 세병로 31 (송천동2가)","f":"1층"},{"r":"전주시","g":"전주시덕진구","d":"여의동","b":"여의동주민센터(2층, 대회의실)","a":"전북특별자치도 전주시 덕진구 여암2길 9 (반월동)","f":"2층"},{"r":"전주시","g":"전주시덕진구","d":"우아1동","b":"우아1동주민센터(1층, 회의실)","a":"전북특별자치도 전주시 덕진구 우아2길 25 (우아동3가)","f":"1층"},{"r":"전주시","g":"전주시덕진구","d":"우아2동","b":"우아2동주민센터(2층, 주민자치교실)","a":"전북특별자치도 전주시 덕진구 진버들7길 25 (우아동2가)","f":"2층"},{"r":"전주시","g":"전주시덕진구","d":"조촌동","b":"조촌동주민센터(1층, 강당)","a":"전북특별자치도 전주시 덕진구 쪽구름로 150 (반월동)","f":"1층"},{"r":"전주시","g":"전주시덕진구","d":"진북동","b":"덕진구청(3층, 상황실)","a":"전북특별자치도 전주시 덕진구 벚꽃로 55 (진북동)","f":"3층"},{"r":"전주시","g":"전주시덕진구","d":"팔복동","b":"팔복동주민센터(2층, 대강당)","a":"전북특별자치도 전주시 덕진구 신복5길 6 (팔복동1가)","f":"2층"},{"r":"전주시","g":"전주시덕진구","d":"혁신동","b":"혁신동주민센터(2층, 다목적회의실)","a":"전북특별자치도 전주시 덕진구 기지로 95 (장동)","f":"2층"},{"r":"전주시","g":"전주시덕진구","d":"호성동","b":"호성동주민센터(4층, 다목적실)","a":"전북특별자치도 전주시 덕진구 동부대로 869 (호성동1가)","f":"4층"},{"r":"전주시","g":"전주시완산구","d":"노송동","b":"노송동주민센터(1층,민원실)","a":"전북특별자치도 전주시 완산구 인봉1길 54 (중노송동)","f":"1층"},{"r":"전주시","g":"전주시완산구","d":"동서학동","b":"동서학동주민센터(1층, 민원실)","a":"전북특별자치도 전주시 완산구 서학로 26 (동서학동)","f":"1층"},{"r":"전주시","g":"전주시완산구","d":"삼천1동","b":"삼천1동주민센터(2층, 회의실)","a":"전북특별자치도 전주시 완산구 성지산로 33 (삼천동1가)","f":"2층"},{"r":"전주시","g":"전주시완산구","d":"삼천2동","b":"삼천2동행정복지센터(1층, 민원실)","a":"전북특별자치도 전주시 완산구 거마중앙로 49 (삼천동1가)","f":"1층"},{"r":"전주시","g":"전주시완산구","d":"삼천3동","b":"삼천3동주민센터(2층, 회의실)","a":"전북특별자치도 전주시 완산구 삼천천변2길 37 (삼천동1가)","f":"2층"},{"r":"전주시","g":"전주시완산구","d":"서서학동","b":"서서학동주민센터(1층, 민원실)","a":"전북특별자치도 전주시 완산구 공수내로 24 (서서학동)","f":"1층"},{"r":"전주시","g":"전주시완산구","d":"서신동","b":"서신동주민센터(1층, 회의실)","a":"전북특별자치도 전주시 완산구 서신천변14길 10 (서신동)","f":"1층"},{"r":"전주시","g":"전주시완산구","d":"완산동","b":"완산동주민센터(2층, 다목적실)","a":"전북특별자치도 전주시 완산구 강당2길 7 (서완산동2가)","f":"2층"},{"r":"전주시","g":"전주시완산구","d":"인후1동","b":"인후1동주민센터(1층, 민원실)","a":"전북특별자치도 전주시 덕진구 견훤로 290 (인후동1가)","f":"1층"},{"r":"전주시","g":"전주시완산구","d":"인후2동","b":"인후2동주민센터(2층, 대회의실)","a":"전북특별자치도 전주시 덕진구 견훤왕궁로 244 (인후동2가)","f":"2층"},{"r":"전주시","g":"전주시완산구","d":"인후3동","b":"인후3동행정복지센터(3층, 회의실)","a":"전북특별자치도 전주시 덕진구 구총목로 5 (인후동1가)","f":"3층"},{"r":"전주시","g":"전주시완산구","d":"중앙동","b":"중앙동주민센터(1층, 민원실)","a":"전북특별자치도 전주시 완산구 태평3길 43-17 (태평동)","f":"1층"},{"r":"전주시","g":"전주시완산구","d":"중화산1동","b":"중화산1동주민센터(1층, 회의실)","a":"전북특별자치도 전주시 완산구 한두평3길 16 (중화산동2가)","f":"1층"},{"r":"전주시","g":"전주시완산구","d":"중화산2동","b":"중화산2동주민센터(2층, 다목적실)","a":"전북특별자치도 전주시 완산구 화산천변로 30 (중화산동2가)","f":"2층"},{"r":"전주시","g":"전주시완산구","d":"평화1동","b":"평화사회복지관(3층, 강당)","a":"전북특별자치도 전주시 완산구 덕적골2길 25 (평화동1가)","f":"3층"},{"r":"전주시","g":"전주시완산구","d":"평화2동","b":"평화2동주민센터(3층, 대회의실)","a":"전북특별자치도 전주시 완산구 평화18길 14-16 (평화동1가)","f":"3층"},{"r":"전주시","g":"전주시완산구","d":"풍남동","b":"한국전통문화전당(3층, 열림동 다목적실)","a":"전북특별자치도 전주시 완산구 현무1길 20 (경원동3가)","f":"3층"},{"r":"전주시","g":"전주시완산구","d":"효자1동","b":"효자1동주민센터(2층, 회의실)","a":"전북특별자치도 전주시 완산구 안행5길 59-3 (효자동1가)","f":"2층"},{"r":"전주시","g":"전주시완산구","d":"효자2동","b":"완산구청(4층, 회의실)","a":"전북특별자치도 전주시 완산구 서원로 232 (효자동1가)","f":"4층"},{"r":"전주시","g":"전주시완산구","d":"효자3동","b":"효자3동주민센터(1층, 다목적실)","a":"전북특별자치도 전주시 완산구 강변로 180 (효자동1가)","f":"1층"},{"r":"전주시","g":"전주시완산구","d":"효자4동","b":"한국토지주택공사 전북지역본부(별관, 1층)","a":"전북특별자치도 전주시 완산구 홍산로 158 (효자동2가)","f":"1층"},{"r":"전주시","g":"전주시완산구","d":"효자5동","b":"전북특별자치도청(4층, 대회의실)","a":"전북특별자치도 전주시 완산구 효자로 225 (효자동3가)","f":"4층"},{"r":"군산시","g":"군산시","d":"개정동","b":"개정동행정복지센터(1층, 민원실)","a":"전북특별자치도 군산시 번영로 339-5 (개정동)","f":"1층"},{"r":"군산시","g":"군산시","d":"개정면","b":"개정면행정복지센터(2층, 대강당)","a":"전북특별자치도 군산시 개정면 바르메길 42","f":"2층"},{"r":"군산시","g":"군산시","d":"경암동","b":"경암동행정복지센터(3층, 다목적강당)","a":"전북특별자치도 군산시 경암3길 56 (경암동)","f":"3층"},{"r":"군산시","g":"군산시","d":"구암동","b":"구암동행정복지센터(3층, 대회의실)","a":"전북특별자치도 군산시 세풍길 21 (구암동)","f":"3층"},{"r":"군산시","g":"군산시","d":"나운1동","b":"군산문화원(구 KBS)(2층, 부모공동교육장)","a":"전북특별자치도 군산시 대학로 330 (나운동)","f":"2층"},{"r":"군산시","g":"군산시","d":"나운2동","b":"나운2동행정복지센터(3층, 대강당)","a":"전북특별자치도 군산시 나운3길 16 (나운동)","f":"3층"},{"r":"군산시","g":"군산시","d":"나운3동","b":"국립군산대학교(1층, 체육관)","a":"전북특별자치도 군산시 대학로 558 (미룡동)","f":"1층"},{"r":"군산시","g":"군산시","d":"나포면","b":"나포면행정복지센터(2층, 다목적강당)","a":"전북특별자치도 군산시 나포면 나포초교길 9","f":"2층"},{"r":"군산시","g":"군산시","d":"대야면","b":"대야면행정복지센터(3층, 강당)","a":"전북특별자치도 군산시 대야면 석화로 7","f":"3층"},{"r":"군산시","g":"군산시","d":"미성동","b":"미성동행정복지센터(2층, 회의실)","a":"전북특별자치도 군산시 공항로 371 (산북동)","f":"2층"},{"r":"군산시","g":"군산시","d":"삼학동","b":"삼학동행정복지센터(2층, 다목적강당)","a":"전북특별자치도 군산시 미원로 17 (오룡동)","f":"2층"},{"r":"군산시","g":"군산시","d":"서수면","b":"서수면행정복지센터(2층, 강당)","a":"전북특별자치도 군산시 서수면 항쟁로 193","f":"2층"},{"r":"군산시","g":"군산시","d":"성산면","b":"오성문화복지센터(1층, 체육관)","a":"전북특별자치도 군산시 성산면 송호로 217","f":"1층"},{"r":"군산시","g":"군산시","d":"소룡동","b":"소룡동행정복지센터(4층, 대강당)","a":"전북특별자치도 군산시 설림안4길 30 (소룡동)","f":"4층"},{"r":"군산시","g":"군산시","d":"수송동","b":"수송동행정복지센터(2층, 다목적실)","a":"전북특별자치도 군산시 동수송1길 7 (수송동)","f":"2층"},{"r":"군산시","g":"군산시","d":"신풍동","b":"신풍동행정복지센터(1층, 소회의실)","a":"전북특별자치도 군산시 대학로 215 (문화동)","f":"1층"},{"r":"군산시","g":"군산시","d":"옥구읍","b":"옥구읍행정복지센터(3층, 다목적회의실)","a":"전북특별자치도 군산시 옥구읍 옥구로 6","f":"3층"},{"r":"군산시","g":"군산시","d":"옥도면","b":"옥도면행정복지센터(1층, 민원실 로비)","a":"전북특별자치도 군산시 내항2길 125 (금동)","f":"1층"},{"r":"군산시","g":"군산시","d":"옥산면","b":"옥산면힐빙센터(1층, 회의실)","a":"전북특별자치도 군산시 옥산면 옥산로 245","f":"1층"},{"r":"군산시","g":"군산시","d":"옥서면","b":"옥서면행정복지센터(2층, 다목적강당)","a":"전북특별자치도 군산시 옥서면 옥구저수지로 209","f":"2층"},{"r":"군산시","g":"군산시","d":"월명동","b":"월명동행정복지센터(3층, 대회의실)","a":"전북특별자치도 군산시 구영6길 51 (월명동)","f":"3층"},{"r":"군산시","g":"군산시","d":"임피면","b":"임피면행정복지센터(2층, 다목적실)","a":"전북특별자치도 군산시 임피면 남상2길 1","f":"2층"},{"r":"군산시","g":"군산시","d":"조촌동","b":"조촌동행정복지센터(2층, 다목적실)","a":"전북특별자치도 군산시 부골1길 40 (조촌동)","f":"2층"},{"r":"군산시","g":"군산시","d":"중앙동","b":"중앙동행정복지센터(2층, 대회의실)","a":"전북특별자치도 군산시 큰샘길 47 (죽성동)","f":"2층"},{"r":"군산시","g":"군산시","d":"해신동","b":"해신동행정복지센터(3층, 대회의실)","a":"전북특별자치도 군산시 중앙로 220 (금동)","f":"3층"},{"r":"군산시","g":"군산시","d":"회현면","b":"회현면행정복지센터(2층, 다목적실)","a":"전북특별자치도 군산시 회현면 회현로 181","f":"2층"},{"r":"군산시","g":"군산시","d":"흥남동","b":"흥남동행정복지센터(3층, 대강당)","a":"전북특별자치도 군산시 월명로 377 (미원동)","f":"3층"},{"r":"익산시","g":"익산시","d":"금마면","b":"금마다목적체육관(1층, 체육관)","a":"전북특별자치도 익산시 금마면 미륵사지로1길 57-13","f":"1층"},{"r":"익산시","g":"익산시","d":"남중동","b":"남중동행정복지센터(2층, 회의실)","a":"전북특별자치도 익산시 인북로56길 8 (남중동)","f":"2층"},{"r":"익산시","g":"익산시","d":"낭산면","b":"낭산면행정복지센터(2층, 회의실)","a":"전북특별자치도 익산시 낭산면 함낭로 949","f":"2층"},{"r":"익산시","g":"익산시","d":"동산동","b":"동산동행정복지센터(4층, 대회의실)","a":"전북특별자치도 익산시 동천로 82 (동산동)","f":"4층"},{"r":"익산시","g":"익산시","d":"마동","b":"마동행정복지센터(3층, 대회의실)","a":"전북특별자치도 익산시 중앙로25길 5 (마동)","f":"3층"},{"r":"익산시","g":"익산시","d":"망성면","b":"망성면행정복지센터(3층, 대회의실)","a":"전북특별자치도 익산시 망성면 안성로 726","f":"3층"},{"r":"익산시","g":"익산시","d":"모현동","b":"모현동행정복지센터(4층, 대회의실)","a":"전북특별자치도 익산시 선화로 129 (모현동1가)","f":"4층"},{"r":"익산시","g":"익산시","d":"삼기면","b":"황토배기문화센터(1층, 다목적실)","a":"전북특별자치도 익산시 삼기면 황금로 511","f":"1층"},{"r":"익산시","g":"익산시","d":"삼성동","b":"삼성동행정복지센터(4층, 다목적실)","a":"전북특별자치도 익산시 부송로 125 (부송동)","f":"4층"},{"r":"익산시","g":"익산시","d":"성당면","b":"성당면행정복지센터(2층, 다목적실)","a":"전북특별자치도 익산시 성당면 황성로 727","f":"2층"},{"r":"익산시","g":"익산시","d":"송학동","b":"송학동행정복지센터(3층, 대회의실)","a":"전북특별자치도 익산시 고현로 11 (송학동)","f":"3층"},{"r":"익산시","g":"익산시","d":"신동","b":"이리북일초등학교(1층, 강당)","a":"전북특별자치도 익산시 동서로19길 100 (신동)","f":"1층"},{"r":"익산시","g":"익산시","d":"어양동","b":"어양동행정복지센터(3층, 다목적실)","a":"전북특별자치도 익산시 동서로63길 43 (어양동)","f":"3층"},{"r":"익산시","g":"익산시","d":"여산면","b":"여산농협(1층, 회의실)","a":"전북특별자치도 익산시 여산면 가람로 366","f":"1층"},{"r":"익산시","g":"익산시","d":"영등1동","b":"영등1동행정복지센터(3층, 다목적실)","a":"전북특별자치도 익산시 고봉로18길 34 (영등동)","f":"3층"},{"r":"익산시","g":"익산시","d":"영등2동","b":"영등2동행정복지센터(3층, 회의실)","a":"전북특별자치도 익산시 무왕로13길 18 (영등동)","f":"3층"},{"r":"익산시","g":"익산시","d":"오산면","b":"오산늘찬문화복지센터(1층, 다목적체육관)","a":"전북특별자치도 익산시 오산면 신오산길 100","f":"1층"},{"r":"익산시","g":"익산시","d":"왕궁면","b":"왕궁면닮문화복지센터(1층, 다목적실)","a":"전북특별자치도 익산시 왕궁면 왕궁로 500","f":"1층"},{"r":"익산시","g":"익산시","d":"용동면","b":"새미르휴센터(1층, 다목적강당실)","a":"전북특별자치도 익산시 용동면 용동1길 80-10","f":"1층"},{"r":"익산시","g":"익산시","d":"용안면","b":"용안면행정복지센터(1층, 체력단련실)","a":"전북특별자치도 익산시 용안면 용안교동1길 21","f":"1층"},{"r":"익산시","g":"익산시","d":"웅포면","b":"웅포면행정복지센터(1층, 체력단련실)","a":"전북특별자치도 익산시 웅포면 강변로 9","f":"1층"},{"r":"익산시","g":"익산시","d":"인화동","b":"익산솜리문화의 숲(1층, 삼삼오오홀)","a":"전북특별자치도 익산시 인북로12길 28 (주현동)","f":"1층"},{"r":"익산시","g":"익산시","d":"중앙동","b":"이리중앙초등학교(1층, 강당)","a":"전북특별자치도 익산시 인북로 77 (갈산동)","f":"1층"},{"r":"익산시","g":"익산시","d":"춘포면","b":"봄나루문화센터(1층, 다목적프로그램실)","a":"전북특별자치도 익산시 춘포면 신촌길 4","f":"1층"},{"r":"익산시","g":"익산시","d":"팔봉동","b":"팔봉동행정복지센터(3층, 요가교실)","a":"전북특별자치도 익산시 무왕로 1408 (팔봉동)","f":"3층"},{"r":"익산시","g":"익산시","d":"평화동","b":"평화제일아파트복지회관(1층, 주민편의시설)","a":"전북특별자치도 익산시 번영로8길 223 (평화동, 평화동제일아파트)","f":"1층"},{"r":"익산시","g":"익산시","d":"함라면","b":"함라게이트볼장(1층, 체육관)","a":"전북특별자치도 익산시 함라면 함라1길 100","f":"1층"},{"r":"익산시","g":"익산시","d":"함열읍","b":"함열읍주민자치센터(1층, 프로그램실)","a":"전북특별자치도 익산시 함열읍 함열중앙로 83","f":"1층"},{"r":"익산시","g":"익산시","d":"황등면","b":"황등남초등학교(1층, 강당)","a":"전북특별자치도 익산시 황등면 황등서로 44","f":"1층"},{"r":"정읍시","g":"정읍시","d":"감곡면","b":"감곡문화체육센터(1층)","a":"전북특별자치도 정읍시 감곡면 원삼1길 7","f":"1층"},{"r":"정읍시","g":"정읍시","d":"고부면","b":"동학울림센터(1층, 다목적실)","a":"전북특별자치도 정읍시 고부면 영주로 530","f":"1층"},{"r":"정읍시","g":"정읍시","d":"내장상동","b":"청소년문화체육관(2층, 다목적청소년문화체육관)","a":"전북특별자치도 정읍시 상동중앙로 14 (상동)","f":"2층"},{"r":"정읍시","g":"정읍시","d":"농소동","b":"농소동행정복지센터(농소동주민센터, 2층, 다목적실)","a":"전북특별자치도 정읍시 충정로 531-8 (공평동)","f":"2층"},{"r":"정읍시","g":"정읍시","d":"덕천면","b":"덕천초등학교[1층, 강당(영주관)]","a":"전북특별자치도 정읍시 덕천면 황토현로 831","f":"1층"},{"r":"정읍시","g":"정읍시","d":"북면","b":"행복쉼터(1층, 프로그램실)","a":"전북특별자치도 정읍시 북면 정읍북로 603","f":"1층"},{"r":"정읍시","g":"정읍시","d":"산내면","b":"산내면종합체육센터(1층, 다목적실)","a":"전북특별자치도 정읍시 산내면 청정로 1297","f":"1층"},{"r":"정읍시","g":"정읍시","d":"산외면","b":"근린생활체육센터 체력단련장(1층, 다용도실)","a":"전북특별자치도 정읍시 산외면 운전1길 19","f":"1층"},{"r":"정읍시","g":"정읍시","d":"상교동","b":"상교동행정복지센터(상교동주민센터, 2층, 회의실)","a":"전북특별자치도 정읍시 구계교암길 277 (과교동)","f":"2층"},{"r":"정읍시","g":"정읍시","d":"소성면","b":"꽃두레권역행복마을센터(2층, 회의실)","a":"전북특별자치도 정읍시 소성면 입고로 524","f":"2층"},{"r":"정읍시","g":"정읍시","d":"수성동","b":"정읍곰두리스포츠센터(1층, 체육관)","a":"전북특별자치도 정읍시 수성1로 64-12 (수성동)","f":"1층"},{"r":"정읍시","g":"정읍시","d":"시기동","b":"시기동행정복지센터(시기동주민센터, 3층, 대회의실)","a":"전북특별자치도 정읍시 벚꽃로 323 (시기동)","f":"3층"},{"r":"정읍시","g":"정읍시","d":"신태인읍","b":"신태인읍행정복지센터(3층, 회의실)","a":"전북특별자치도 정읍시 신태인읍 신태인중앙로 14","f":"3층"},{"r":"정읍시","g":"정읍시","d":"연지동","b":"정읍시여성문화관(1층, 회의실)","a":"전북특별자치도 정읍시 조곡천1길 7 (연지동)","f":"1층"},{"r":"정읍시","g":"정읍시","d":"영원면","b":"영원활력센터(1층, 강당)","a":"전북특별자치도 정읍시 영원면 영원로 1054","f":"1층"},{"r":"정읍시","g":"정읍시","d":"옹동면","b":"옹동전통문화생활관(1층)","a":"전북특별자치도 정읍시 옹동면 칠석3길 6","f":"1층"},{"r":"정읍시","g":"정읍시","d":"이평면","b":"말목장터어울림센터(1층)","a":"전북특별자치도 정읍시 이평면 황토현로 290","f":"1층"},{"r":"정읍시","g":"정읍시","d":"입암면","b":"입암초등학교[1층, 강당(입암관)]","a":"전북특별자치도 정읍시 입암면 입암중앙길 29","f":"1층"},{"r":"정읍시","g":"정읍시","d":"장명동","b":"정읍시보훈회관(3층, 대회의실)","a":"전북특별자치도 정읍시 충정로 158 (상동)","f":"3층"},{"r":"정읍시","g":"정읍시","d":"정우면","b":"정우초등학교[1층, 강당 (정토관)]","a":"전북특별자치도 정읍시 정우면 금남길 28-24","f":"1층"},{"r":"정읍시","g":"정읍시","d":"초산동","b":"초산동행정복지센터(초산동주민센터, 2층, 다목적실)","a":"전북특별자치도 정읍시 천변로 226 (시기동)","f":"2층"},{"r":"정읍시","g":"정읍시","d":"칠보면","b":"칠보 행복이음센터(1층, 대강당)","a":"전북특별자치도 정읍시 칠보면 칠보중앙로 50-13","f":"1층"},{"r":"정읍시","g":"정읍시","d":"태인면","b":"태인복합체육회관(1층, 레크레이션실)","a":"전북특별자치도 정읍시 태인면 정읍북로 1185","f":"1층"},{"r":"남원시","g":"남원시","d":"금동","b":"남원초등학교(1층, 강당)","a":"전북특별자치도 남원시 가방뜰길 18 (금동)","f":"1층"},{"r":"남원시","g":"남원시","d":"금지면","b":"금지면문화누리센터(1층, 다목적체육관)","a":"전북특별자치도 남원시 금지면 금지순환길 917-13","f":"1층"},{"r":"남원시","g":"남원시","d":"노암동","b":"노암동행정복지센터(1층, 주민회의실)","a":"전북특별자치도 남원시 노송로 1274 (노암동)","f":"1층"},{"r":"남원시","g":"남원시","d":"대강면","b":"대강면행정복지센터(1층, 민원실)","a":"전북특별자치도 남원시 대강면 섬진로 865","f":"1층"},{"r":"남원시","g":"남원시","d":"대산면","b":"대산면주민자치센터(1층)","a":"전북특별자치도 남원시 대산면 운교1길 26","f":"1층"},{"r":"남원시","g":"남원시","d":"덕과면","b":"덕과면행정복지센터(1층,민원실)","a":"전북특별자치도 남원시 덕과면 덕과월평길 3","f":"1층"},{"r":"남원시","g":"남원시","d":"도통동","b":"도통동게이트볼장(1층)","a":"전북특별자치도 남원시 오들1길 52 (도통동)","f":"1층"},{"r":"남원시","g":"남원시","d":"동충동","b":"남원학생교육문화관(별관, 2층, 다목적강당)","a":"전북특별자치도 남원시 용성로 49 (동충동)","f":"2층"},{"r":"남원시","g":"남원시","d":"보절면","b":"보절면행정복지센터(1층,민원실)","a":"전북특별자치도 남원시 보절면 신흥2길 17","f":"1층"},{"r":"남원시","g":"남원시","d":"사매면","b":"사매면행정복지센터 매화언덕(2층,회의실)","a":"전북특별자치도 남원시 사매면 오신1길 9-4","f":"2층"},{"r":"남원시","g":"남원시","d":"산내면","b":"산내면행정복지센터(1층, 소회의실)","a":"전북특별자치도 남원시 산내면 대정길 21","f":"1층"},{"r":"남원시","g":"남원시","d":"산동면","b":"산동이랑 문화랑(1층, 다목적강당)","a":"전북특별자치도 남원시 산동면 요천로 2897","f":"1층"},{"r":"남원시","g":"남원시","d":"송동면","b":"송동면행정복지센터(1층, 민원실)","a":"전북특별자치도 남원시 송동면 송기길 56","f":"1층"},{"r":"남원시","g":"남원시","d":"수지면","b":"수지농민회관(1층)","a":"전북특별자치도 남원시 수지면 고주로 623-9","f":"1층"},{"r":"남원시","g":"남원시","d":"아영면","b":"아영면행정복지센터 (1층,민원실)","a":"전북특별자치도 남원시 아영면 아백로 380","f":"1층"},{"r":"남원시","g":"남원시","d":"왕정동","b":"왕정동행정복지센터(1층, 민원실)","a":"전북특별자치도 남원시 성황단길 7 (왕정동)","f":"1층"},{"r":"남원시","g":"남원시","d":"운봉읍","b":"운봉읍행정복지센터(1층, 지리산커뮤니티센터)","a":"전북특별자치도 남원시 운봉읍 황산로 1083","f":"1층"},{"r":"남원시","g":"남원시","d":"이백면","b":"이백면행정복지센터 (1층,민원실)","a":"전북특별자치도 남원시 이백면 입촌길 16","f":"1층"},{"r":"남원시","g":"남원시","d":"인월면","b":"인월면행정복지센터(1층, 신관 회의실)","a":"전북특별자치도 남원시 인월면 황산로 1804","f":"1층"},{"r":"남원시","g":"남원시","d":"주생면","b":"주생면 문화회관(1층, 소회의실)","a":"전북특별자치도 남원시 주생면 요천로 821","f":"1층"},{"r":"남원시","g":"남원시","d":"주천면","b":"주천면행정복지센터(1층, 사랑방)","a":"전북특별자치도 남원시 주천면 정령치로 61","f":"1층"},{"r":"남원시","g":"남원시","d":"죽항동","b":"죽항동행정복지센터(신관 2층, 자치사랑방)","a":"전북특별자치도 남원시 비석길 72 (죽항동)","f":"2층"},{"r":"남원시","g":"남원시","d":"향교동","b":"향교동행정복지센터(2층 ,다목적실)","a":"전북특별자치도 남원시 동림로 116 (향교동)","f":"2층"},{"r":"김제시","g":"김제시","d":"검산동","b":"검산동행정복지센터(2층, 회의실)","a":"전북특별자치도 김제시 검산택지길 34 (검산동)","f":"2층"},{"r":"김제시","g":"김제시","d":"공덕면","b":"공덕두루누리활력센터(2층, 대회의실)","a":"전북특별자치도 김제시 공덕면 공덕9길 16-8","f":"2층"},{"r":"김제시","g":"김제시","d":"광활면","b":"광활면행정복지센터(2층, 회의실)","a":"전북특별자치도 김제시 광활면 광활11길 46","f":"2층"},{"r":"김제시","g":"김제시","d":"교월동","b":"교월동행정복지센터(2층, 회의실)","a":"전북특별자치도 김제시 벽지산로 215 (옥산동)","f":"2층"},{"r":"김제시","g":"김제시","d":"금구면","b":"금구면행정복지센터(2층,대회의실)","a":"전북특별자치도 김제시 금구면 봉두로 105","f":"2층"},{"r":"김제시","g":"김제시","d":"금산면","b":"금산종합체육관(1층)","a":"전북특별자치도 김제시 금산면 원평8길 19-14","f":"1층"},{"r":"김제시","g":"김제시","d":"만경읍","b":"금만농업협동조합(2층, 회의실)","a":"전북특별자치도 김제시 만경읍 만경로 786","f":"2층"},{"r":"김제시","g":"김제시","d":"백구면","b":"백구면행정복지센터(2층, 대회의실)","a":"전북특별자치도 김제시 백구면 황토로 1267-21","f":"2층"},{"r":"김제시","g":"김제시","d":"백산면","b":"백산면행정복지센터(3층, 대회의실)","a":"전북특별자치도 김제시 백산면 학당길 18","f":"3층"},{"r":"김제시","g":"김제시","d":"봉남면","b":"봉남면 다목적체육시설(1층, 게이트볼장)","a":"전북특별자치도 김제시 봉남면 남주2길 72","f":"1층"},{"r":"김제시","g":"김제시","d":"부량면","b":"부량면복지회관(1층)","a":"전북특별자치도 김제시 부량면 벽골제로 208","f":"1층"},{"r":"김제시","g":"김제시","d":"성덕면","b":"성덕온마루(1층, 다목적실)","a":"전북특별자치도 김제시 성덕면 석동1길 27","f":"1층"},{"r":"김제시","g":"김제시","d":"신풍동","b":"신풍동행정복지센터(2층, 회의실)","a":"전북특별자치도 김제시 중앙10길 11 (신풍동)","f":"2층"},{"r":"김제시","g":"김제시","d":"요촌동","b":"한들중학교(1층, 강당)","a":"전북특별자치도 김제시 중앙로 137 (요촌동)","f":"1층"},{"r":"김제시","g":"김제시","d":"용지면","b":"용지면행정복지센터(2층, 대회의실)","a":"전북특별자치도 김제시 용지면 용지로 455","f":"2층"},{"r":"김제시","g":"김제시","d":"죽산면","b":"죽산면복지생활관(1층)","a":"전북특별자치도 김제시 죽산면 해학로 38","f":"1층"},{"r":"김제시","g":"김제시","d":"진봉면","b":"진봉초등학교(1층, 강당)","a":"전북특별자치도 김제시 진봉면 진봉로 302","f":"1층"},{"r":"김제시","g":"김제시","d":"청하면","b":"청하면문화회관(1층)","a":"전북특별자치도 김제시 청하면 청하로 518","f":"1층"},{"r":"김제시","g":"김제시","d":"황산면","b":"황산면 복지센터(2층, 문화활동방)","a":"전북특별자치도 김제시 황산면 봉월3길 23 황산면 복지센터","f":"2층"},{"r":"완주군","g":"완주군","d":"경천면","b":"경천면행정복지센터(1층, 사무실)","a":"전북특별자치도 완주군 경천면 대둔산로 259","f":"1층"},{"r":"완주군","g":"완주군","d":"고산면","b":"고산면행정복지센터(2층, 회의실)","a":"전북특별자치도 완주군 고산면 고산로 69-13","f":"2층"},{"r":"완주군","g":"완주군","d":"구이면","b":"구이면행정복지센터(3층, 대회의실)","a":"전북특별자치도 완주군 구이면 구이로 1482","f":"3층"},{"r":"완주군","g":"완주군","d":"동상면","b":"동상면행정복지센터(1층, 사무실)","a":"전북특별자치도 완주군 동상면 동상로 1414","f":"1층"},{"r":"완주군","g":"완주군","d":"봉동읍","b":"봉동읍행정복지센터(2층, 회의실)","a":"전북특별자치도 완주군 봉동읍 삼봉로 933","f":"2층"},{"r":"완주군","g":"완주군","d":"비봉면","b":"비봉면체육공원(1층, 게이트볼장)","a":"전북특별자치도 완주군 비봉면 문장길 12-16","f":"1층"},{"r":"완주군","g":"완주군","d":"삼례읍","b":"삼례읍행정복지센터(1층, 다목적실)","a":"전북특별자치도 완주군 삼례읍 삼봉로 48","f":"1층"},{"r":"완주군","g":"완주군","d":"상관면","b":"상관면행정복지센터(2층, 회의실)","a":"전북특별자치도 완주군 상관면 신리로 109","f":"2층"},{"r":"완주군","g":"완주군","d":"소양면","b":"소양면행정복지센터(1층, 대회의실)","a":"전북특별자치도 완주군 소양면 소양로 161","f":"1층"},{"r":"완주군","g":"완주군","d":"용진읍","b":"용진읍행정복지센터(3층, 대회의실)","a":"전북특별자치도 완주군 용진읍 완주로 210","f":"3층"},{"r":"완주군","g":"완주군","d":"운주면","b":"운주면행정복지센터(2층, 다목적강당)","a":"전북특별자치도 완주군 운주면 장선로 124","f":"2층"},{"r":"완주군","g":"완주군","d":"이서면","b":"이서면행정복지센터(2층, 대회의실)","a":"전북특별자치도 완주군 이서면 이서로 55","f":"2층"},{"r":"완주군","g":"완주군","d":"화산면","b":"화산면행정복지센터(1층, 대회의실)","a":"전북특별자치도 완주군 화산면 화산로 830-14","f":"1층"},{"r":"진안군","g":"진안군","d":"동향면","b":"동향면행정복지센터(1층, 다목적강당)","a":"전북특별자치도 진안군 동향면 진성로 1609","f":"1층"},{"r":"진안군","g":"진안군","d":"마령면","b":"마령면행정복지센터(2층, 강당)","a":"전북특별자치도 진안군 마령면 솔안2길 8","f":"2층"},{"r":"진안군","g":"진안군","d":"백운면","b":"백운면행정복지센터(1층, 다목적강당)","a":"전북특별자치도 진안군 백운면 임진로 1297","f":"1층"},{"r":"진안군","g":"진안군","d":"부귀면","b":"부귀면행정복지센터(1층, 강당)","a":"전북특별자치도 진안군 부귀면 부귀로 305-7","f":"1층"},{"r":"진안군","g":"진안군","d":"상전면","b":"상전면행정복지센터(1층, 주민사랑방)","a":"전북특별자치도 진안군 상전면 주평로 41","f":"1층"},{"r":"진안군","g":"진안군","d":"성수면","b":"성수면행정복지센터(1층, 소회의실)","a":"전북특별자치도 진안군 성수면 관진로 783","f":"1층"},{"r":"진안군","g":"진안군","d":"안천면","b":"안천면행정복지센터(1층, 소회의실)","a":"전북특별자치도 진안군 안천면 진무로 2998","f":"1층"},{"r":"진안군","g":"진안군","d":"용담면","b":"용담면복지문화센터(1층, 다목적실)","a":"전북특별자치도 진안군 용담면 대송로 11","f":"1층"},{"r":"진안군","g":"진안군","d":"정천면","b":"정천면행정복지센터(1층, 주민사랑방)","a":"전북특별자치도 진안군 정천면 봉학로 66","f":"1층"},{"r":"진안군","g":"진안군","d":"주천면","b":"주천면행정복지센터(1층, 다목적강당)","a":"전북특별자치도 진안군 주천면 동상주천로 2213","f":"1층"},{"r":"진안군","g":"진안군","d":"진안읍","b":"진안문화의집(1층, 다목적실)","a":"전북특별자치도 진안군 진안읍 대성길 5","f":"1층"},{"r":"무주군","g":"무주군","d":"무주읍","b":"무주예체문화관(1층, 다목적홀)","a":"전북특별자치도 무주군 무주읍 한풍루로 326-17","f":"1층"},{"r":"무주군","g":"무주군","d":"무풍면","b":"무풍십승지문화센터(2층,다목적실)","a":"전북특별자치도 무주군 무풍면 대덕산로 927","f":"2층"},{"r":"무주군","g":"무주군","d":"부남면","b":"부남면다목적강당(1층)","a":"전북특별자치도 무주군 부남면 부남로 892-8","f":"1층"},{"r":"무주군","g":"무주군","d":"설천면","b":"설천면행정복지센터(2층, 태권방)","a":"전북특별자치도 무주군 설천면 무설로 1607","f":"2층"},{"r":"무주군","g":"무주군","d":"안성면","b":"안성초등학교(1층, 다목적실)","a":"전북특별자치도 무주군 안성면 칠연로 58","f":"1층"},{"r":"무주군","g":"무주군","d":"적상면","b":"오색단풍이야기센터(1층, 다목적홀)","a":"전북특별자치도 무주군 적상면 적상산로 59","f":"1층"},{"r":"장수군","g":"장수군","d":"계남면","b":"계남면사무소(2층, 대회의실)","a":"전북특별자치도 장수군 계남면 장수로 3071","f":"2층"},{"r":"장수군","g":"장수군","d":"계북면","b":"참샘골체육관(1층)","a":"전북특별자치도 장수군 계북면 문성길 9","f":"1층"},{"r":"장수군","g":"장수군","d":"번암면","b":"번암면 종합복지회관(3층, 다목적강당)","a":"전북특별자치도 장수군 번암면 장수로 480","f":"3층"},{"r":"장수군","g":"장수군","d":"산서면","b":"산서면 종합복지회관(2층, 다목적강당)","a":"전북특별자치도 장수군 산서면 비행로 39-7","f":"2층"},{"r":"장수군","g":"장수군","d":"장계면","b":"장계면행정복지센터(2층, 대회의실)","a":"전북특별자치도 장수군 장계면 한들로 153-3","f":"2층"},{"r":"장수군","g":"장수군","d":"장수읍","b":"군민회관(1층)","a":"전북특별자치도 장수군 장수읍 호비로 10","f":"1층"},{"r":"장수군","g":"장수군","d":"천천면","b":"하늘내체육관(1층)","a":"전북특별자치도 장수군 천천면 장천로 1166","f":"1층"},{"r":"임실군","g":"임실군","d":"강진면","b":"강진면복지회관(2층, 다목적강당)","a":"전북특별자치도 임실군 강진면 호국로 4","f":"2층"},{"r":"임실군","g":"임실군","d":"관촌면","b":"관촌면체육문화센터(1층, 다목적체육관)","a":"전북특별자치도 임실군 관촌면 사선1길 65","f":"1층"},{"r":"임실군","g":"임실군","d":"덕치면","b":"덕치면복지회관(1층, 덕치어울림관 다목적실)","a":"전북특별자치도 임실군 덕치면 인덕로 1398","f":"1층"},{"r":"임실군","g":"임실군","d":"삼계면","b":"박사골문화복지마당(1층, 놀이마당)","a":"전북특별자치도 임실군 삼계면 충효로 1282","f":"1층"},{"r":"임실군","g":"임실군","d":"성수면","b":"성수면행정복지센터(1층, 다목적강당)","a":"전북특별자치도 임실군 성수면 임진로 213","f":"1층"},{"r":"임실군","g":"임실군","d":"신덕면","b":"신덕면복지회관(1층, 거북바위관 다목적실)","a":"전북특별자치도 임실군 신덕면 수지로 80","f":"1층"},{"r":"임실군","g":"임실군","d":"신평면","b":"신평문화회관(1층, 체육관)","a":"전북특별자치도 임실군 신평면 석등슬치로 311","f":"1층"},{"r":"임실군","g":"임실군","d":"오수면","b":"오수면행정복지센터(2층, 마주침공간)","a":"전북특별자치도 임실군 오수면 삼일로 27","f":"2층"},{"r":"임실군","g":"임실군","d":"운암면","b":"운암면사무소(2층, 회의실)","a":"전북특별자치도 임실군 운암면 임운로 1884","f":"2층"},{"r":"임실군","g":"임실군","d":"임실읍","b":"임실읍사무소(1층, 북카페)","a":"전북특별자치도 임실군 임실읍 봉황로 144","f":"1층"},{"r":"임실군","g":"임실군","d":"지사면","b":"지사면종합복지회관(1층, 다목적실)","a":"전북특별자치도 임실군 지사면 충효로 2451","f":"1층"},{"r":"임실군","g":"임실군","d":"청웅면","b":"청웅면복지회관(2층, 대강당)","a":"전북특별자치도 임실군 청웅면 청웅로 141","f":"2층"},{"r":"순창군","g":"순창군","d":"구림면","b":"구림체육관(1층, 체육관)","a":"전북특별자치도 순창군 구림면 연산2길 16","f":"1층"},{"r":"순창군","g":"순창군","d":"금과면","b":"금과면생활체육관(1층, 체육관)","a":"전북특별자치도 순창군 금과면 매우1길 3","f":"1층"},{"r":"순창군","g":"순창군","d":"동계면","b":"동계면문화체육센터(1층, 실내체육관)","a":"전북특별자치도 순창군 동계면 동계1길 13","f":"1층"},{"r":"순창군","g":"순창군","d":"복흥면","b":"복흥면체육관(1층, 체육관)","a":"전북특별자치도 순창군 복흥면 추령로 1126","f":"1층"},{"r":"순창군","g":"순창군","d":"순창읍","b":"순창군장애인체육관(1층, 체육관)","a":"전북특별자치도 순창군 순창읍 장류로 407-11","f":"1층"},{"r":"순창군","g":"순창군","d":"쌍치면","b":"쌍치체육관(1층, 체육관)","a":"전북특별자치도 순창군 쌍치면 쌍계로 46-18","f":"1층"},{"r":"순창군","g":"순창군","d":"유등면","b":"유등주민복지센터(2층,  강당)","a":"전북특별자치도 순창군 유등면 외이2길 4","f":"2층"},{"r":"순창군","g":"순창군","d":"인계면","b":"인계면체육관(1층, 체육관)","a":"전북특별자치도 순창군 인계면 인덕로 245","f":"1층"},{"r":"순창군","g":"순창군","d":"적성면","b":"적성체육관(1층, 체육관)","a":"전북특별자치도 순창군 적성면 적성로 142","f":"1층"},{"r":"순창군","g":"순창군","d":"팔덕면","b":"팔덕체육관(1층, 체육관)","a":"전북특별자치도 순창군 팔덕면 용산길 13","f":"1층"},{"r":"순창군","g":"순창군","d":"풍산면","b":"풍산면다목적체육관(1층, 체육관)","a":"전북특별자치도 순창군 풍산면 금풍로 1006-11","f":"1층"},{"r":"고창군","g":"고창군","d":"고수면","b":"고수복합문화체육센터(1층, 다목적체육관)","a":"전북특별자치도 고창군 고수면 남고창산단로 108-13","f":"1층"},{"r":"고창군","g":"고창군","d":"고창읍","b":"고창읍주민행복센터(2층, 회의실)","a":"전북특별자치도 고창군 고창읍 모양성로 26","f":"2층"},{"r":"고창군","g":"고창군","d":"공음면","b":"공음체육관(1층)","a":"전북특별자치도 고창군 공음면 왕제산로 73","f":"1층"},{"r":"고창군","g":"고창군","d":"대산면","b":"대산농어민문화체육센터(1층)","a":"전북특별자치도 고창군 대산면 사거1길 49-10","f":"1층"},{"r":"고창군","g":"고창군","d":"무장면","b":"무장체육문화센터(1층)","a":"전북특별자치도 고창군 무장면 청보리로 1550","f":"1층"},{"r":"고창군","g":"고창군","d":"부안면","b":"부안면건강증진센터(1층, 체육관)","a":"전북특별자치도 고창군 부안면 중흥서당촌길 34-66","f":"1층"},{"r":"고창군","g":"고창군","d":"상하면","b":"상하면농어민교육관(1층)","a":"전북특별자치도 고창군 상하면 상하로 84-8","f":"1층"},{"r":"고창군","g":"고창군","d":"성내면","b":"성내어울림체육센터(1층,체육관)","a":"전북특별자치도 고창군 성내면 시기1길 37","f":"1층"},{"r":"고창군","g":"고창군","d":"성송면","b":"성송체육회관(1층)","a":"전북특별자치도 고창군 성송면 대성로 763-8","f":"1층"},{"r":"고창군","g":"고창군","d":"신림면","b":"신림면다목적체육관(1층)","a":"전북특별자치도 고창군 신림면 신림로 192","f":"1층"},{"r":"고창군","g":"고창군","d":"심원면","b":"심원초등학교 (1층, 한울관)","a":"전북특별자치도 고창군 심원면 심원로 229","f":"1층"},{"r":"고창군","g":"고창군","d":"아산면","b":"어울림행복누리터(1층,다목적실1)","a":"전북특별자치도 고창군 아산면 녹두로 795","f":"1층"},{"r":"고창군","g":"고창군","d":"해리면","b":"해리면(신)복지회관(1층)","a":"전북특별자치도 고창군 해리면 청해1길 15","f":"1층"},{"r":"고창군","g":"고창군","d":"흥덕면","b":"흥덕문화복지관 (2층, 회의실)","a":"전북특별자치도 고창군 흥덕면 선운대로 3774","f":"2층"},{"r":"부안군","g":"부안군","d":"계화면","b":"계화면종합복지센터(1층, 체육관)","a":"전북특별자치도 부안군 계화면 간재로 441","f":"1층"},{"r":"부안군","g":"부안군","d":"동진면","b":"동진문화복지센터(2층, 다목적실)","a":"전북특별자치도 부안군 동진면 동진로 97","f":"2층"},{"r":"부안군","g":"부안군","d":"백산면","b":"백산면사무소(2층, 대회의실)","a":"전북특별자치도 부안군 백산면 백산로 335","f":"2층"},{"r":"부안군","g":"부안군","d":"변산면","b":"변산초등학교(1층, 강당)","a":"전북특별자치도 부안군 변산면 지서1길 11","f":"1층"},{"r":"부안군","g":"부안군","d":"보안면","b":"보안면사무소(1층, 다목적회의실)","a":"전북특별자치도 부안군 보안면 영전길 19-29","f":"1층"},{"r":"부안군","g":"부안군","d":"부안읍","b":"부안읍행정복지센터(2층, 대회의실)","a":"전북특별자치도 부안군 부안읍 석정로 182","f":"2층"},{"r":"부안군","g":"부안군","d":"상서면","b":"상서면 상생문화복지센터(2층, 다목적실)","a":"전북특별자치도 부안군 상서면 상서길 8","f":"2층"},{"r":"부안군","g":"부안군","d":"위도면","b":"위도복지센터(1층, 주민자치교실)","a":"전북특별자치도 부안군 위도면 진리안길 5","f":"1층"},{"r":"부안군","g":"부안군","d":"주산면","b":"주산면행정복지센터(2층, 대회의실)","a":"전북특별자치도 부안군 주산면 주산로 8","f":"2층"},{"r":"부안군","g":"부안군","d":"줄포면","b":"줄포면주민자치센터(1층, 회의실)","a":"전북특별자치도 부안군 줄포면 줄포4길 9-7","f":"1층"},{"r":"부안군","g":"부안군","d":"진서면","b":"변산중학교(1층, 다목적실)","a":"전북특별자치도 부안군 진서면 청자로 921","f":"1층"},{"r":"부안군","g":"부안군","d":"하서면","b":"하서면문화센터(2층, 다목적실)","a":"전북특별자치도 부안군 하서면 신지길 5","f":"2층"},{"r":"부안군","g":"부안군","d":"행안면","b":"행안면주민자치센터(1층, 강당)","a":"전북특별자치도 부안군 행안면 번영로 33","f":"1층"}];
+
+  function tokenize(s) {
+    return s.replace(/[,\.]/g, ' ').split(/\s+/).filter(t => t.length > 0);
+  }
+
+  function searchByAddress() {
+    const input = document.getElementById('addrInput');
+    const resultsEl = document.getElementById('searchResults');
+    const query = input.value.trim();
+
+    if (!query) {
+      resultsEl.innerHTML = '<div class="result-empty">주소나 동·읍·면 이름을 입력해주세요</div>';
+      return;
+    }
+
+    const tokens = tokenize(query);
+    const scored = stations.map(s => {
+      let score = 0;
+      const dongClean = s.d.replace(/[0-9]+/g, '');
+      for (const tk of tokens) {
+        const tkClean = tk.replace(/[0-9]+/g, '');
+        if (s.d === tk) score += 200;
+        else if (s.d.includes(tk) || tk.includes(s.d)) score += 120;
+        else if (dongClean && tkClean && (dongClean === tkClean || dongClean.includes(tkClean) || tkClean.includes(dongClean))) score += 80;
+        if (s.r === tk) score += 60;
+        else if (s.r.includes(tk) || s.g.includes(tk)) score += 40;
+        if (s.a.includes(tk)) score += 15;
+        if (s.b.includes(tk)) score += 10;
+      }
+      return {station: s, score};
+    });
+
+    const top = scored.filter(r => r.score > 0).sort((a, b) => b.score - a.score).slice(0, 5);
+
+    if (top.length === 0) {
+      resultsEl.innerHTML = `<div class="result-empty">'${query}'에 해당하는 투표소를 찾지 못했습니다.<br>시·군 + 동·읍·면 이름으로 다시 검색해보세요.<br>(예: 전주 효자동 / 부안 변산면)</div>`;
+      return;
+    }
+
+    resultsEl.innerHTML = top.map((r, i) => renderStation(r.station, i === 0)).join('');
+  }
+
+  function renderStation(s, isTop) {
+    const fullAddr = s.a.replace('전북특별자치도 ', '').trim();
+    const searchKey = s.b.replace(/\([^)]*\)/g, '').trim() + ' ' + s.r;
+    const kakaoUrl = `https://map.kakao.com/?q=${encodeURIComponent(searchKey)}`;
+    const naverUrl = `https://map.naver.com/p/search/${encodeURIComponent(searchKey)}`;
+    return `
+      <div class="station-card${isTop ? ' top' : ''}">
+        ${isTop ? '<div class="station-top-badge">✓ 가장 가까운 곳</div>' : ''}
+        <div class="station-name">${s.d} 사전투표소</div>
+        <div class="station-region">${s.g}</div>
+        <div class="station-building">📍 ${s.b}<span class="station-floor">${s.f}</span></div>
+        <div class="station-addr">${fullAddr}</div>
+        <div class="station-actions">
+          <a href="${kakaoUrl}" target="_blank" rel="noopener" class="station-action primary">🗺 카카오맵</a>
+          <a href="${naverUrl}" target="_blank" rel="noopener" class="station-action">🗺 네이버맵</a>
+        </div>
+      </div>`;
+  }
+
+  document.getElementById('addrInput').addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') { e.preventDefault(); searchByAddress(); }
+  });
+
+  function copyLink() {
+    const url = SITE_URL;
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(url).then(() => alert('링크가 복사되었습니다')).catch(() => fallback(url));
+    } else { fallback(url); }
+  }
+  function fallback(text) {
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand('copy'); alert('링크가 복사되었습니다'); }
+    catch (e) { alert('수동으로 주소를 복사해주세요'); }
+    document.body.removeChild(ta);
+  }
+</script>
+</body>
+</html>
