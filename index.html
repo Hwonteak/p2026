@@ -11,6 +11,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 
+<!-- 카카오톡 SDK -->
+<script src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.2/kakao.min.js" crossorigin="anonymous"></script>
+
 <!-- 카카오톡·SNS 공유 미리보기용 Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="민주당 원팀 도지사 이원택">
@@ -310,7 +313,7 @@
 
   /* ===== KEY MESSAGES ===== */
   .message-section {
-    padding: 40px 24px 36px;
+    padding: 44px 24px 40px;
     background: var(--dp-blue);
     color: white;
     position: relative;
@@ -359,7 +362,7 @@
   }
 
   /* message-section 내부 색상 오버라이드 */
-  .message-section .section-title { color: white; }
+  .message-section .section-title { color: white; margin-bottom: 28px; }
   .message-section .section-title .accent { color: var(--gold); }
   .message-section .section-tag { background: var(--gold); color: var(--dp-blue-deep); }
 
@@ -376,8 +379,8 @@
     background: rgba(255,255,255,0.1);
     border: 1px solid rgba(255,255,255,0.2);
     border-radius: 18px;
-    padding: 24px 20px;
-    margin-bottom: 14px;
+    padding: 28px 22px;
+    margin-bottom: 18px;
     position: relative; z-index: 1;
   }
   .promise-num {
@@ -401,22 +404,22 @@
     font-weight: 900;
   }
   .promise-title {
-    margin-top: 14px;
+    margin-top: 20px;
     font-size: 25px;
     font-weight: 900;
     letter-spacing: -0.03em;
-    line-height: 1.25;
+    line-height: 1.3;
   }
   .promise-title .accent { color: var(--gold); }
   .promise-desc {
-    margin-top: 12px;
+    margin-top: 16px;
     font-size: 18px;
-    line-height: 1.75;
+    line-height: 1.8;
     opacity: 0.92;
     font-weight: 500;
   }
   .promise-tags {
-    margin-top: 14px;
+    margin-top: 18px;
     display: flex; flex-wrap: wrap; gap: 8px;
   }
   .promise-tag {
@@ -872,23 +875,53 @@
   }
 
   /* ===== SHARE ===== */
-  .share-section { padding: 24px; background: white; border-top: 1px solid var(--line); }
+  .share-section { padding: 28px 24px; background: white; border-top: 1px solid var(--line); }
+  .share-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--ink);
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+  }
   .share-btn {
-    padding: 22px;
+    width: 100%;
+    padding: 20px;
     border-radius: 14px;
-    border: 2px solid var(--dp-blue);
-    background: white;
-    color: var(--dp-blue);
+    border: none;
     font-weight: 900;
-    font-size: 19px;
+    font-size: 18px;
     cursor: pointer;
     font-family: var(--font-base);
     transition: all 0.15s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   }
-  .share-btn:active { transform: scale(0.98); background: var(--dp-blue-soft); }
-  .share-btn.primary { background: var(--dp-blue); color: white; }
-  .share-btn.primary:active { background: var(--dp-blue-deep); }
-  .share-btn-full { width: 100%; }
+  .share-btn:last-child { margin-bottom: 0; }
+  .share-btn:active { transform: scale(0.98); }
+  .share-btn-icon {
+    font-size: 22px;
+    line-height: 1;
+  }
+  .share-btn-kakao {
+    background: #FEE500;
+    color: #181600;
+  }
+  .share-btn-kakao:active {
+    background: #f5db00;
+  }
+  .share-btn-copy {
+    background: var(--dp-blue);
+    color: white;
+    border: 2px solid var(--dp-blue);
+  }
+  .share-btn-copy:active {
+    background: var(--dp-blue-deep);
+  }
 
   /* ===== FOOTER ===== */
   footer {
@@ -901,15 +934,7 @@
   footer strong { color: white; font-weight: 900; font-size: 16px; }
   .footer-info { margin-top: 14px; }
   .footer-info b { color: rgba(255,255,255,0.95); font-weight: 700; }
-  .footer-disclosure {
-    margin-top: 18px;
-    padding-top: 18px;
-    border-top: 1px solid rgba(255,255,255,0.13);
-    font-size: 14px;
-    color: rgba(255,255,255,0.55);
-    line-height: 1.65;
-  }
-</style>
+  </style>
 </head>
 <body>
 <div class="wrap">
@@ -1189,18 +1214,21 @@
 
   <!-- ===== 공유 ===== -->
   <section class="share-section">
-    <button class="share-btn primary share-btn-full" onclick="copyLink()">🔗 링크 복사하기</button>
+    <div class="share-title">친구에게 알리기</div>
+    <button class="share-btn share-btn-kakao" onclick="shareKakao()">
+      <span class="share-btn-icon">💬</span>
+      <span>카카오톡으로 공유</span>
+    </button>
+    <button class="share-btn share-btn-copy" onclick="copyLink()">
+      <span class="share-btn-icon">🔗</span>
+      <span>링크 복사하기</span>
+    </button>
   </section>
 
   <!-- ===== 푸터 ===== -->
   <footer>
     <div class="footer-info">
       <b>전화</b> 063-224-0036 · <b>팩스</b> 063-254-8258
-    </div>
-    <div class="footer-disclosure">
-      본 페이지는 이원택 후보 선거사무소에서 제작한 홍보물입니다.<br>
-      지역별 공약은 「제9회 전국동시지방선거 책자형선거공보」(2026.05.06)에서 발췌하였으며,<br>
-      사전투표소 정보는 중앙선거관리위원회 공식자료를 기반으로 합니다.
     </div>
   </footer>
 
@@ -1209,6 +1237,67 @@
 <script>
   // ===== 사이트 정보 =====
   const SITE_URL = 'https://1taek.vercel.app/';
+  const SHARE_IMAGE = 'https://1taek.vercel.app/images/share.jpg';
+  const KAKAO_APP_KEY = 'PRDA7AE606843A8704425D4E64358AD7B98832F1';
+
+  // ===== 카카오톡 SDK 초기화 =====
+  (function initKakao() {
+    if (window.Kakao && !window.Kakao.isInitialized()) {
+      try {
+        window.Kakao.init(KAKAO_APP_KEY);
+        console.log('[Kakao] init 완료');
+      } catch (e) {
+        console.warn('[Kakao] init 실패:', e);
+      }
+    } else if (!window.Kakao) {
+      setTimeout(initKakao, 500);
+    }
+  })();
+
+  function shareKakao() {
+    if (!window.Kakao) {
+      alert('카카오톡 공유 기능을 불러오는 중입니다.\n잠시 후 다시 시도해주세요.');
+      return;
+    }
+    if (!window.Kakao.isInitialized()) {
+      try {
+        window.Kakao.init(KAKAO_APP_KEY);
+      } catch (e) {
+        alert('카카오 SDK 초기화 실패:\n' + e.message);
+        return;
+      }
+    }
+    if (!window.Kakao.Share) {
+      alert('카카오 공유 기능을 사용할 수 없습니다.');
+      return;
+    }
+
+    try {
+      window.Kakao.Share.sendDefault({
+        objectType: 'feed',
+        content: {
+          title: '민주당 원팀 도지사 이원택',
+          description: '전북 大도약 · 우리동네 공약 · 사전투표소 안내',
+          imageUrl: SHARE_IMAGE,
+          link: {
+            mobileWebUrl: SITE_URL,
+            webUrl: SITE_URL,
+          },
+        },
+        buttons: [{
+          title: '바로 보러가기',
+          link: {
+            mobileWebUrl: SITE_URL,
+            webUrl: SITE_URL,
+          },
+        }],
+        installTalk: true,
+      });
+    } catch (e) {
+      console.error('[Kakao Share] 오류:', e);
+      alert('공유 중 오류가 발생했습니다.\n카카오 개발자 콘솔에서 도메인(https://1taek.vercel.app)이 등록되어 있는지 확인해주세요.\n\n오류: ' + (e.message || e));
+    }
+  }
 
   // ===== 지역별 공약 =====
   const regionData = {
